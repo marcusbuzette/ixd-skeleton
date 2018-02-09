@@ -13,6 +13,9 @@ var signup = require('./routes/signup');
 var result = require('./routes/result');
 var login = require('./routes/login');
 var home = require("./routes/home");
+var favorites = require("./routes/favorites");
+var search = require("./routes/search");
+var profile = require("./routes/profile");
 // Example route
 // var user = require('./routes/user');
 
@@ -43,6 +46,9 @@ app.get('/result', result.view);
 app.get('/signup', signup.view);
 app.get('/login', login.view);
 app.get('/home', home.view);
+app.get('/favorites',favorites.view);
+app.get('/search', search.view);
+app.get('/profile',profile.view);
 // Example route
 // app.get('/users', user.list);
 
