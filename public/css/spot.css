@@ -1,0 +1,42 @@
+p{
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 13px;
+	color: #6e6e6e;
+}
+
+body {
+     border: 1px dotted gray;
+     padding: 20px;
+}
+
+.title{
+  padding-top: 4vh;
+  padding-bottom: 1vh;
+ 
+  text-align: center;
+  
+}
+
+.title img{
+	width: 40%
+
+}
+
+.info{
+	padding-top: 1vh;
+  	padding-bottom: 4vh;
+  	text-align: center;
+}
+
+.info p{
+padding-left: 30%;
+	max-width: 70%;
+}
+
+.info img{
+	width:30%;
+}
+
+.button{
+	text-align: center;
+}

@@ -1,21 +1,48 @@
 <html>
 <head>
 	<title>Test Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/spot.css">
+
 </head>
 <body>
-<h1>Welcome to Spot!</h1>
+<div class="container">
+	<h1>Welcome to Spot!</h1>
+	<br>
+	<p>Spot is a smart city-exploring recommendation system that give suggestions based on user's current mood and task the user want to complete</p>
 	<br><br><br>
-	<div>
-		<p>Set Mood</p>
-		<p>Set Task</p>
-		<a href="search/resulta.html">Search</a>
-	</div>
+	<form action="result">
+  		<h4>Set Mood</h4><select name="Set Mood">
+    		<option value="volvo">Happy</option>
+    		<option value="saab">Sad</option>
+    		<option value="fiat">Bored</option>
+    		<option value="audi">Agitated</option>
+	  	</select>
+  		<br>
+  			<h4>Set Task</h4>
+	  	<select name="Set Task">
+    		<option value="volvo">Group Study</option>
+    		<option value="saab">Work on laptop</option>
+    		<option value="fiat">Read</option>
+  	  		<option value="audi">Chat</option>
+  		</select>
+  		<br><br><br><br>
+  		<input type="submit" value="Confirm" />
+	</form>
 	<br><br>
 	<div>
-		<a href="signup.handlebars">Sign up</a>
+		<a href="signup">Sign up</a>
 		<br>
-		<a href="login.html">Log in</a>
+		<a href="login">Log in</a>
 
 	</div>
+</div>
+
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/hci-friends.js"></script>
+	<script src="js/bootstrap.js"></script>
 </body>
 </html>
