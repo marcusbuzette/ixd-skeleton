@@ -41,6 +41,8 @@ padding-left: 10%;
 	text-align: center;
 }
 
+<<<<<<< HEAD
+=======
 .topnav .search-container button:hover {
   background: #ccc;
 }
@@ -58,6 +60,7 @@ padding-left: 10%;
 
 
 
+>>>>>>> 1d0427b00ca3df7288960274d53e1015ba5cc5fe
 .button,
 button,
 input[type="submit"],

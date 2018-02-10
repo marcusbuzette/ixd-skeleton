@@ -16,6 +16,7 @@ var home = require("./routes/home");
 var favorites = require("./routes/favorites");
 var search = require("./routes/search");
 var profile = require("./routes/profile");
+var place = require("./routes/place");
 // Example route
 // var user = require('./routes/user');
 
@@ -49,6 +50,7 @@ app.get('/home', home.view);
 app.get('/favorites',favorites.view);
 app.get('/search', search.view);
 app.get('/profile',profile.view);
+app.get('/place', place.view);
 // Example route
 // app.get('/users', user.list);
 
