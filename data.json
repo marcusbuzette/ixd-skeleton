@@ -11,7 +11,10 @@
 					  "Outdoor Setting: NO"],
 			"mood" : "relax",
 			"task" : "read",
-			"address": ""
+			"address": "",
+			"distance": "",
+			"price": "",
+			"listIndex": ""
 
 		},
 		{
@@ -22,7 +25,10 @@
 			"info" : [],
 			"mood" : "focus",
 			"task" : "study",
-			"address": ""			
+			"address": "",
+			"distance": "",
+			"price": "",
+			"listIndex": ""			
 		},
 		{
 			"placeId" : "3",
@@ -32,7 +38,10 @@
 			"info" : ["Open Until: 2AM", "Noise Level: HIGH", "Wifi Availability: NO","Outdoor Setting: YES"],
 			"mood" : "happy",
 			"task" : "chat",
-			"address": ""		
+			"address": "",
+			"distance": "",
+			"price": "",
+			"listIndex": ""		
 		}
 	]
 	, "users": [
