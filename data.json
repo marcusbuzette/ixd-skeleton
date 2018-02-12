@@ -1,29 +1,47 @@
 {
 	"places": [
 		{
+			"placeId": "1",
 			"name": "Jazz Cafe",
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." ,
-			"imageURL": "../images/1.png"
+			"imageURL": "../images/1.png",
+			"info" : ["Noise Level: LOW",
+					  "Pet Friendly: YES",
+					  "Wifi Availability: YES",
+					  "Outdoor Setting: NO"],
+			"mood" : "relax",
+			"task" : "reading",
+			"address": ""
+
 		},
 		{
+			"placeId" : "2",
 			"name": "Sungod Lounge",
 			"description": "Nice spot for group study ",
-			"imageURL": "http://lorempixel.com/400/300/abstract"			
+			"imageURL": "http://lorempixel.com/400/300/abstract",
+			"info" : [],
+			"mood" : "focus",
+			"task" : "study",
+			"address": ""			
 		},
 		{
+			"placeId" : "3",
 			"name": "Dennis Bar",
 			"description": "Nice place to see the sunset and chill with your friends",
-			"imageURL": "http://lorempixel.com/400/400/abstract"			
+			"imageURL": "http://lorempixel.com/400/400/abstract",
+			"info" : [],
+			"mood" : "happy",
+			"task" : "drink",
+			"address": ""		
 		}
-	],
-
-	"users":[
+	]
+	, "users": [
 		{
-			"username":"",
-			"password":"",
-			"userid":"",
-			"name":"",
-			"bio":
+			"username":"asd",
+			"password":"asd",
+			"userid":"asd",
+			"name":"asd",
+			"bio": "asd"
 		}
 	]
 

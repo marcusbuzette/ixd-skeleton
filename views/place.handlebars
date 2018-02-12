@@ -19,10 +19,11 @@
 	</div>
 	<div class="info">
 		<br>
-		<h5>Noise Level: LOW</h5>
-		<h5>Pet Friendly: YES</h5>
-		<h5>Wifi Availability: YES</h5>
-		<h5>Outdoor Setting: NO</h5>
+		<h3>{{places.[0].mood}}</h3>
+		<h3>{{places.[0].task}}</h3>
+		{{#each places.[0].info}}
+			<h5>{{this}}</h5>
+		{{/each}}
 		<br>
 		<h4>Reviews</h4>
 		<p>{{places.[0].description}}</p>
