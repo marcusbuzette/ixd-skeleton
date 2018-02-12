@@ -10,7 +10,7 @@
 					  "Wifi Availability: YES",
 					  "Outdoor Setting: NO"],
 			"mood" : "relax",
-			"task" : "reading",
+			"task" : "read",
 			"address": ""
 
 		},
@@ -29,9 +29,9 @@
 			"name": "Dennis Bar",
 			"description": "Nice place to see the sunset and chill with your friends",
 			"imageURL": "http://lorempixel.com/400/400/abstract",
-			"info" : [],
+			"info" : ["Open Until: 2AM", "Noise Level: HIGH", "Wifi Availability: NO","Outdoor Setting: YES"],
 			"mood" : "happy",
-			"task" : "drink",
+			"task" : "chat",
 			"address": ""		
 		}
 	]
