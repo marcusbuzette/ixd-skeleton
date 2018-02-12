@@ -15,5 +15,18 @@
 			"description": "Nice place to see the sunset and chill with your friends",
 			"imageURL": "http://lorempixel.com/400/400/abstract"			
 		}
+	],
+
+	"users":[
+		{
+			"username":"",
+			"password":"",
+			"userid":"",
+			"name":"",
+			"bio":
+		}
 	]
+
+
+
 }
