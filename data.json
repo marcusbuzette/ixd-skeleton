@@ -1,39 +1,62 @@
 {
 	"places": [
 		{
+			"placeId": "1",
 			"name": "Jazz Cafe",
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." ,
-			"imageURL": "./images/1.png"
+			"imageURL": "../images/1.png",
+			"info" : ["Noise Level: LOW",
+					  "Pet Friendly: YES",
+					  "Wifi Availability: YES",
+					  "Outdoor Setting: NO"],
+			"mood" : ["relax"],
+			"task" : ["read"],
+			"address": "",
+			"distance": "",
+			"price": "",
+			"listIndex": ""
+
 		},
 		{
-			"name": "Doug Engelbart",
-			"description": "Has awesome pet mice",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg"			
+			"placeId" : "2",
+			"name": "Sungod Lounge",
+			"description": "Nice spot for group study ",
+			"imageURL": "http://lorempixel.com/400/300/abstract",
+			"info" : [],
+			"mood" : ["focus"],
+			"task" : ["study"],
+			"address": "",
+			"distance": "",
+			"price": "",
+			"listIndex": ""			
 		},
 		{
-			"name": "Ivan Sutherland",
-			"description": "Great at sketching",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg"			
-		},
-		{
-			"name": "Lucy Suchman",
-			"description": "Loves Trukese navigators",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/d/df/Lucy_Suchman.jpeg"			
-		},
-		{
-			"name": "Vannevar Bush",
-			"description": "Has stellar associative memory",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Vannevar_Bush_portrait.jpg"			
-		},
-		{
-			"name": "Grace Hopper",
-			"description": "Only friend with a Navy ship named after them",
-			"imageURL": "http://amhistory.si.edu/ogmt/images/upload/women-mathematicians/AHB2012q06025.jpg"
-		},
-		{
-			"name": "Allen Newell",
-			"description": "Really into psychology",
-			"imageURL": "http://uploads.edubilla.com/awards-winners/92/b4/allen-newell.jpg"
+			"placeId" : "3",
+			"name": "Dennis Bar",
+			"description": "Nice place to see the sunset and chill with your friends",
+			"imageURL": "http://lorempixel.com/400/400/abstract",
+			"info" : ["Open Until: 2AM", "Noise Level: HIGH", "Wifi Availability: NO","Outdoor Setting: YES"],
+			"mood" : ["happy"],
+			"task" : ["chat"],
+			"address": "",
+			"distance": "",
+			"price": "",
+			"listIndex": ""		
 		}
 	]
+	, "users": [
+		{
+			"username":"MMouse",
+			"password":"123456",
+			"userid":"1",
+			"name":"Mickey Mouse",
+			"bio":"",
+			"username":"asd",
+			"password":"asd",
+			"userid":"asd",
+			"name":"asd",
+			"bio": "asd"
+		}
+	]
+
 }

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <title>Directions service (complex)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <title>Navigation</title>
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -12,53 +14,60 @@
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
-        height: 100%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        height: 90%;
         margin: 0;
         padding: 0;
       }
       #floating-panel {
         position: absolute;
-        top: 10px;
-        left: 25%;
+        width: 40%;
+        height: 20%;
+        top: 10%;
         z-index: 5;
         background-color: #fff;
         padding: 5px;
         border: 1px solid #999;
-        text-align: center;
+        border-radius: 5px;
+        text-align: left;
         font-family: 'Roboto','sans-serif';
-        line-height: 30px;
+        line-height: 20px;
         padding-left: 10px;
       }
       #warnings-panel {
-        width: 100%;
+        padding-left: 10%;
+        width: 90%;
         height:10%;
         text-align: center;
       }
     </style>
   </head>
+
   <body>
     <div id="floating-panel">
     <b>Start: </b>
     <select id="start">
-      <option value="penn station, new york, ny">Penn Station</option>
-      <option value="grand central station, new york, ny">Grand Central Station</option>
-      <option value="625 8th Avenue, New York, NY, 10018">Port Authority Bus Terminal</option>
-      <option value="staten island ferry terminal, new york, ny">Staten Island Ferry Terminal</option>
-      <option value="101 E 125th Street, New York, NY">Harlem - 125th St Station</option>
+      <option value="UCSD, San Diego, CA">My Current Position</option>
+      <option value="UCSD, San Diego, CA">UCSD</option>
+      <option value="La Jolla Shores, San Diego, CA 92037">La Jolla Shores</option>
+      <option value="Downtown, San Diego, CA">Downtown San Diego</option>
+
     </select>
     <b>End: </b>
     <select id="end">
-      <option value="260 Broadway New York NY 10007">City Hall</option>
-      <option value="W 49th St & 5th Ave, New York, NY 10020">Rockefeller Center</option>
-      <option value="moma, New York, NY">MOMA</option>
-      <option value="350 5th Ave, New York, NY, 10118">Empire State Building</option>
-      <option value="253 West 125th Street, New York, NY">Apollo Theater</option>
-      <option value="1 Wall St, New York, NY">Wall St</option>
+      <option value="873 Turquoise St, San Diego, CA 92109">Jazz Cafe</option>
+      <option value="Rimac Annex, San Diego, CA 92121">Dennis Bar</option>
+      <option value="Sun God Lounge, Gilman Dr, San Diego, CA">Sungod Lounge</option>
+      <option value="UCSD, San Diego, CA">Home - UCSD</option>
     </select>
     </div>
     <div id="map"></div>
     &nbsp;
     <div id="warnings-panel"></div>
+    <a href="./" style="padding-left: 10%;">Back</a>
+
+
     <script>
       function initMap() {
         var markerArray = [];
