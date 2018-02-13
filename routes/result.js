@@ -1,17 +1,56 @@
 var data = require('../data.json');
+var globalList = new Array();
+var nextList = new Array();
 
 
 exports.view = function(req, res){
 	var resultList = new Array();
-	
+
+
 	for (var i = data.places.length - 1; i >= 0; i--) {
-		if(data.places[i].mood == req.query.mood || data.places[i].task == req.query.task ){
-			console.log(data.places[i].name);
+		if(compareMood(req.query.mood,data.places[i].mood) || compareTask(req.query.task,data.places[i].task) ){
 			resultList.push(data.places[i]) ;
+			resultList[resultList.length-1].listIndex = resultList.length-1;
+
 		}
 		
 	}
-	console.log(resultList);
+	globalList = resultList;
+	nextList = globalList;
+	res.render('result', {output: nextList})
 
-	res.render('result' , {output: resultList});
+	
 };
+
+exports.next = function(req,res){
+	
+	if(nextList.length > 1){ // Move the object from the first place to last place on the array
+		var aux = nextList.shift();
+		nextList.push(aux);
+	}else{
+	}
+	res.render('result', {output: nextList})
+}
+
+exports.back = function(req,res){
+	res.render('result', {output: nextList})
+}
+
+function compareMood(mood,placeMoods){
+	for (var i = placeMoods.length - 1; i >= 0; i--) {
+		if (placeMoods[i] == mood) {
+			return true;
+		}
+
+	}
+	return false;
+}
+
+function compareTask(task,placeTasks){
+	for (var i = placeTasks.length - 1; i >= 0; i--) {
+		if (placeTasks[i] == task) {
+			return true;
+		}
+	}
+	return false;
+}

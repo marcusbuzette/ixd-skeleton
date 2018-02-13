@@ -51,8 +51,10 @@ app.get('/home', home.view);
 app.get('/favorites',favorites.view);
 app.get('/search', search.view);
 app.get('/profile',profile.view);
-app.get('/place', place.view);
+app.get('/place/:placeId', place.view);
+app.get('/place_back', result.back);
 app.get ('/map',map.view);
+app.get('/result_next',result.next);
 // Example route
 // app.get('/users', user.list);
 

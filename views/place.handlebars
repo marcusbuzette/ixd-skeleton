@@ -6,30 +6,30 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UFT-8">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/spot.css">
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/spot.css">
 
 </head>
 <body>
 	<div class="container">
 	<div class=title>
-		<img src="{{places.[0].imageURL}}" alt="jazz cafe" class="img">
-		<h2>{{places.[0].name}}</h2>
+		<img src="{{placeToShow.imageURL}}" alt="{{placeToShow.name}}" class="img-responsive">
+		<h2>{{placeToShow.name}}</h2>
 	</div>
 	<div class="info">
 		<br>
-		<h3>{{places.[0].mood}}</h3>
-		<h3>{{places.[0].task}}</h3>
-		{{#each places.[0].info}}
+		<h3>{{placeToShow.mood}}</h3>
+		<h3>{{placeToShow.task}}</h3>
+		{{#each placeToShow.info}}
 			<h5>{{this}}</h5>
 		{{/each}}
 		<br>
 		<h4>Reviews</h4>
-		<p>{{places.[0].description}}</p>
+		<p>{{placeToShow.description}}</p>
 		<div>
 			<h4>Directions</h4>
-			<img src="images/2.jpg" alt="map" class="img">
+			<img src="../images/2.jpg" alt="map" class="img">
 		</div>
 		
 		<br>
@@ -40,7 +40,7 @@
 	</div>
 
 	<div class="">
-	    <a href="./result">Back</a>
+	    <a href="../place_back">Back</a>
 	</div>
 	
 
