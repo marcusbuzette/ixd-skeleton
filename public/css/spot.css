@@ -3,9 +3,6 @@ p{
 	color: #6e6e6e;
 }
 
-body {
-     padding: 20px;
-}
 
 .title{
   padding-top: 4vh;
@@ -61,6 +58,41 @@ input[type="submit"]{
 }
 
 
+/*icon bar */
+
+.icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+}
+
+.icon-bar a {
+    float: left;
+    width: 25%;
+    display: block;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.2s ease;
+    color: white;
+    font-size: 30px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #f4b342 !important;
+}
+
+
+.container {
+  min-height: 100%;
+}
+
+html { margin-bottom: 30px }
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
