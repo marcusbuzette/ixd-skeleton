@@ -8,13 +8,20 @@
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
 	<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="../css/spot.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div class="container">
-		<h2>Home Page</h2>	
 		<br><br>
+		<h2>Home Page</h2>	
+		<br>
+		 <div class="tip"><i class="fa fa-question-circle"></i>
+  		<span class="tiptext">Set your current mood and task, then SPOT will give you smart recommendation of suitable place to explore :)
+  		</span></div>
+		<br>
 	<form action="./result">
-  	<h4>Set Mood</h4><select name="Set Mood">
+  	<h4>Set Mood</h4><select name="Set Mood"> 
+		</div>
     	<option value="happy">Happy</option>
     	<option value="sad">Sad</option>
     	<option value="bored">Bored</option>
@@ -28,18 +35,15 @@
     	<option value="Read">Read</option>
     	<option value="chat">Chat</option>
   	</select>
-  	<br><br><br><br><br>
+  	<br><br><br><br>
   	<input type="submit" value="Confirm">
-</form>
-
-	<div>
-		<br><br><br><br>
-		<a href="./home">Home</a> 	&nbsp;
-		<a href="./search">Search</a> 	&nbsp;
-		<a href="./favorites">Favorites</a> 	&nbsp;
-		<a href="./profile">Profile</a> 	&nbsp;
+	</form>
 	</div>
-	<br><br>
+<div class="icon-bar">
+	  <a class="active" href="./home"><i class="fa fa-home"></i></a> 
+	  <a href="./search"><i class="fa fa-search"></i></a>  
+	  <a href="./favorites"><i class="fa fa-heart"></i></a>
+	  <a href="./profile"><i class="fa fa-user"></i></a> 
 	</div>
 </body>
 </html>

@@ -5,13 +5,26 @@
 	<meta charset="UFT-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UFT-8">
+<<<<<<< HEAD
 	<link href="./css/bootstrap.min.css" rel="stylesheet">
 	<link href="./css/bootstrap-theme.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="./css/spot.css">
+=======
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/spot.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+>>>>>>> 1ffe4cbd796bdb8d803fbb796b7610cc7e9d6f06
 </head>
 <body>
-	<div>
+	<div class="container">
+		<br><br>
 		<h2>Results</h2>
+		<div class="tip"><i class="fa fa-question-circle"></i>
+  		<span class="tiptext">Here are some recommendations for you! Select No to see another option, select Yes to open navigation or select View to see more details :)
+  		</span></div>
+		<br>
 		<h4>{{output.[0].name}}</h4>
 		<img src="{{output.[0].imageURL}}" class="img-responsive">
 		<div class="info">
@@ -22,9 +35,11 @@
 		<a href="./result_next">No</a>
 		<a href="./place/{{output.[0].placeId}}">View</a>
 		<a href="./map">Yes</a>
-	</div>
+
 	<br><br>
 	<a href="./">Back</a>
+	</div>
+
 
 
 </body>
