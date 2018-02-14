@@ -18,6 +18,8 @@ var search = require("./routes/search");
 var profile = require("./routes/profile");
 var place = require("./routes/place");
 var map = require("./routes/map");
+var navigation = require("./routes/navigation");
+var share = require("./routes/share");
 // Example route
 // var user = require('./routes/user');
 
@@ -55,6 +57,8 @@ app.get('/place/:placeId', place.view);
 app.get('/place_back', result.back);
 app.get ('/map',map.view);
 app.get('/result_next',result.next);
+app.get('/navigation',navigation.view);
+app.get('/share',share.view);
 // Example route
 // app.get('/users', user.list);
 

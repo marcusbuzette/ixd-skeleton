@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/spot.css">
     <title>Navigation</title>
     <style>
       /* Always set the map height explicitly to define the size of the div
@@ -16,14 +17,14 @@
       html, body {
         padding-top: 10%;
         padding-bottom: 10%;
-        height: 90%;
+        height: 100%;
         margin: 0;
         padding: 0;
       }
       #floating-panel {
         position: absolute;
-        width: 40%;
-        height: 20%;
+        width: 55%;
+        height: 30%;
         top: 10%;
         z-index: 5;
         background-color: #fff;
@@ -34,12 +35,6 @@
         font-family: 'Roboto','sans-serif';
         line-height: 20px;
         padding-left: 10px;
-      }
-      #warnings-panel {
-        padding-left: 10%;
-        width: 90%;
-        height:10%;
-        text-align: center;
       }
     </style>
   </head>
@@ -63,10 +58,7 @@
     </select>
     </div>
     <div id="map"></div>
-    &nbsp;
     <div id="warnings-panel"></div>
-    <a href="./" style="padding-left: 10%;">Back</a>
-
 
     <script>
       function initMap() {
@@ -116,12 +108,12 @@
           // Route the directions and pass the response to a function to create
           // markers for each step.
           if (status === 'OK') {
-            document.getElementById('warnings-panel').innerHTML =
-                '<b>' + response.routes[0].warnings + '</b>';
+            // document.getElementById('warnings-panel').innerHTML =
+             //   '<b>' + response.routes[0].warnings + '</b>';
             directionsDisplay.setDirections(response);
             showSteps(response, markerArray, stepDisplay, map);
           } else {
-            window.alert('Directions request failed due to ' + status);
+         //    window.alert('Directions request failed due to ' + status);
           }
         });
       }
