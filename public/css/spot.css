@@ -129,6 +129,7 @@ input[type="submit"]{
     overflow: hidden;
     position: fixed;
     bottom: 0;
+    margin-left: -20px;
 }
 
 .icon-bar a {
