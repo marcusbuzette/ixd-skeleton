@@ -21,17 +21,28 @@
   		<span class="tiptext">Set your current mood and task, then SPOT will give you smart recommendation of suitable place to explore :)
   		</span></div>
   		<br>
-	<form action="result">
-  		<h4>Set Mood</h4>
-  		<div id="bubbles"></div>
-  		
-  		<h4 id="next">Set Task</h4>
-		<div id="bubbles2"></div>
-  			
-  		<br><br><br><br><br><br>
+	<form action="./result">
+  	<h4>Set Mood</h4><select name="mood"> 
+		
+    	<option value="happy">Happy</option>
+    	<option value="sad">Sad</option>
+    	<option value="relax">Relax</option>
+    	<option value="agitated">Agitated</option>
+  	</select>
+  		<br>
+  		<h4>Set Task</h4>
+  	<select name="task">
+    	<option value="groupstudy">Group Study</option>
+    	<option value="laptop">Work on laptop</option>
+    	<option value="read">Read</option>
+    	<option value="chat">Chat</option>
+  	</select>
+  	<br><br><br><br>
+  	<input type="submit" value="Confirm">
 
-  		<input  type="submit" value="Confirm" />
-	</form>
+</form>
+
+	
 
 	<div class="navabr">
 		<a href="signup">Sign up</a>
@@ -47,8 +58,7 @@
 	<script src="js/jquery-1.11.0.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
-	<script src="js/vis.min.js"></script>
-	<script src="js/homepage.js"></script>
+
 	
 
 </body>

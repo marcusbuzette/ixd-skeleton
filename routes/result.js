@@ -8,6 +8,7 @@ exports.view = function(req, res){
 
 
 	for (var i = data.places.length - 1; i >= 0; i--) {
+		console.log(i);
 		if(compareMood(req.query.mood,data.places[i].mood) || compareTask(req.query.task,data.places[i].task) ){
 			resultList.push(data.places[i]) ;
 			resultList[resultList.length-1].listIndex = resultList.length-1;

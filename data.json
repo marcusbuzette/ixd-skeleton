@@ -24,7 +24,7 @@
 			"imageURL": "http://lorempixel.com/400/300/abstract",
 			"info" : [],
 			"mood" : ["focus"],
-			"task" : ["study"],
+			"task" : ["Group Study"],
 			"address": "",
 			"distance": "",
 			"price": "",
@@ -58,11 +58,6 @@
 			"bio": "asd"
 		}
 	]
-	, "Reviews":[
-		{
-			
-		}
-
-	]
+	
 
 }

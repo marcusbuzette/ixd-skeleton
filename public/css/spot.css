@@ -4,7 +4,7 @@ p{
 }
 
 body {
-     padding: 20px;
+     //padding: 20px;
 }
 
 
@@ -37,7 +37,7 @@ body {
 position: absolute;
     /* width: 40vw; */
     height: 20vh;
-    top: 300;
+    top: 280;
     left: 0;
     max-width: 2100px;
     /* margin: 0 100px 0 100px; */
@@ -52,7 +52,7 @@ position: absolute;
   position: absolute;
   /* width: 40vw; */
   height: 20vh;
-  top: 250;
+  top: 240;
   left: 0;
   max-width: 2100px;
   margin: 0 auto;
