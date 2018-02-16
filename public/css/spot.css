@@ -342,7 +342,7 @@ input[type="button"] {
   padding: 0 30px;
   color: #555;
   text-align: center;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   line-height: 38px;
   letter-spacing: .1rem;
@@ -351,7 +351,7 @@ input[type="button"] {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 6px;
-  border: 1px solid #000000;
+  border: 1px solid gray;
   cursor: pointer;
   box-sizing: border-box; }
 .button{
@@ -369,8 +369,10 @@ input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
   color: #333;
-  border-color: #888;
-  outline: 0; }
+  border-color: black;
+  outline: 0;
+  background-color: #f4b342;
+  }
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
