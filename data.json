@@ -21,7 +21,7 @@
 			"placeId" : "2",
 			"name": "Sungod Lounge",
 			"description": "Nice spot for group study ",
-			"imageURL": "http://lorempixel.com/400/300/abstract",
+			"imageURL": "../images/7.jpeg",
 			"info" : ["Noise Level: MEDIUM",
 					  "Pet Friendly: YES",
 					  "Wifi Availability: YES",
@@ -38,7 +38,7 @@
 			"placeId" : "3",
 			"name": "Dennis Bar",
 			"description": "Nice place to see the sunset and chill with your friends",
-			"imageURL": "http://lorempixel.com/400/300/abstract",
+			"imageURL": "../images/6.jpg",
 			"info" : ["Open Until: 2AM", "Noise Level: HIGH", "Wifi Availability: NO","Outdoor Setting: YES"],
 			"mood" : ["happy"],
 			"task" : ["chat"],
@@ -46,6 +46,76 @@
 			"distance": "",
 			"price": "",
 			"listIndex": ""		
+		},
+
+		{
+			"placeId": "4",
+			"name": "La Jolla Cove",
+			"description": "Nice Ocean view" ,
+			"imageURL": "../images/5.jpg",
+			"info" : [ "Noise Level: MEDIUM",
+					  "Pet Friendly: YES",
+					  "Wifi Availability: NO",
+					  "Outdoor Setting: YES"],
+			"mood" : ["relax"],
+			"task" : ["read"],
+			"address": "",
+			"distance": "",
+			"price": "",
+			"listIndex": ""
+
+		},
+
+		{
+			"placeId": "5",
+			"name": "Nobel Library ",
+			"description": "Nice library with many books and kids zone" ,
+			"imageURL": "../images/4.jpg",
+			"info" : [ "Noise Level: LOW",
+					  "Pet Friendly: NO",
+					  "Wifi Availability: YES",
+					  "Outdoor Setting: NO"],
+			"mood" : ["relax"],
+			"task" : ["read"],
+			"address": "",
+			"distance": "",
+			"price": "",
+			"listIndex": ""
+
+		},
+		{
+			"placeId" : "6",
+			"name": "Geisel Library",
+			"description": "Big library for study alone and group study.",
+			"imageURL": "../images/3.jpg",
+			"info" : ["Noise Level: MEDIUM/LOW",
+					  "Pet Friendly: YES",
+					  "Wifi Availability: YES",
+					  "Outdoor Setting: NO",
+					  "Printer: YES"],
+			"mood" : ["focus"],
+			"task" : ["Group Study"],
+			"address": "",
+			"distance": "",
+			"price": "",
+			"listIndex": ""			
+		},
+		{
+			"placeId" : "7",
+			"name": "North Beach Bistro",
+			"description": "Good wine and nice place to hang out",
+			"imageURL": "../images/8.jpg",
+			"info" : ["Noise Level: MEDIUM",
+					  "Pet Friendly: YES",
+					  "Wifi Availability: YES",
+					  "Outdoor Setting: YES",
+					  "Open Until: 11PM"],
+			"mood" : ["happy"],
+			"task" : ["chat"],
+			"address": "",
+			"distance": "",
+			"price": "",
+			"listIndex": ""			
 		}
 	]
 	, "users": [
