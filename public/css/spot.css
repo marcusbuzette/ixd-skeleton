@@ -12,6 +12,7 @@ body {
   padding-top: 20vh;
 }
 
+
 .title{
   padding-top: 1vh;
   padding-bottom: 1vh;
@@ -33,36 +34,33 @@ body {
 }
 
 #bubbles {
-  position: absolute;
-  width: 40vw;
-  height: 35vh;
-  top: 160;
-  left: 0;
-  
-  max-width: 960px;
-  margin: 0 auto;
- 
-  box-sizing: border-box; 
-  display: inline-block;
-
-  margin-left: 40%;
-  margin-right: 10%;
+position: absolute;
+    /* width: 40vw; */
+    height: 20vh;
+    top: 300;
+    left: 0;
+    max-width: 2100px;
+    /* margin: 0 100px 0 100px; */
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 45%;
+    /* margin-left: 0%; */
+    margin-right: 10%;
 }
 
 #bubbles2 {
   position: absolute;
-  width: 40vw;
-  height: 35vh;
-  top: 390;
+  /* width: 40vw; */
+  height: 20vh;
+  top: 250;
   left: 0;
-  
-  max-width: 960px;
+  max-width: 2100px;
   margin: 0 auto;
  
   box-sizing: border-box; 
   display: inline-block;
 
-  margin-left: 40%;
+  margin-left: 0%;
   margin-right: 10%;
 }
 .info{
@@ -106,8 +104,23 @@ input[type="submit"]{
   cursor: pointer;
 }
 
+/* search option 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.search-option{
 
-/*icon bar */
+}
+
+/* Map Navigation 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.mapnav{
+  position: relative;
+  width: 100%;
+  height: 480px;
+}
+
+
+/*icon bar 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .icon-bar {
     width: 100%;
@@ -144,7 +157,8 @@ input[type="submit"]{
 html { margin-bottom: 30px }
 
 
-/* tips */
+/* tips 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .tip {
     position: relative;
     display: inline-block;

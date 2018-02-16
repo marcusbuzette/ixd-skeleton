@@ -34,7 +34,7 @@
 			"placeId" : "3",
 			"name": "Dennis Bar",
 			"description": "Nice place to see the sunset and chill with your friends",
-			"imageURL": "http://lorempixel.com/400/400/abstract",
+			"imageURL": "http://lorempixel.com/400/300/abstract",
 			"info" : ["Open Until: 2AM", "Noise Level: HIGH", "Wifi Availability: NO","Outdoor Setting: YES"],
 			"mood" : ["happy"],
 			"task" : ["chat"],
@@ -57,6 +57,12 @@
 			"name":"asd",
 			"bio": "asd"
 		}
+	]
+	, "Reviews":[
+		{
+			
+		}
+
 	]
 
 }
