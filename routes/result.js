@@ -37,6 +37,32 @@ exports.back = function(req,res){
 	res.render('result', {output: nextList})
 }
 
+exports.search = function(req, res){
+	var resultList = new Array();
+
+
+	for (var i = data.places.length - 1; i >= 0; i--) {
+		console.log(data.places[i].name);
+		if(compareName(req.query.name,data.places[i].name) ){
+
+			resultList.push(data.places[i]) ;
+			resultList[resultList.length-1].listIndex = resultList.length-1;
+
+		}
+		
+	}
+	res.render('searchList', {output: resultList})
+
+	
+};
+
+function compareName(name,placeNames){
+	if(name == placeNames){
+		return true;
+	}
+}
+
+
 function compareMood(mood,placeMoods){
 	for (var i = placeMoods.length - 1; i >= 0; i--) {
 		if (placeMoods[i] == mood) {

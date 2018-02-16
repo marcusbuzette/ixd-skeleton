@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SPOT</title>
+	<meta charset="UFT-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UFT-8">
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="./css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/spot.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+	<div class="container">
+		<br><br>
+		<h2>Results</h2>
+		<br>
+		{{#each output}}
+			<div class="info">
+				<h5>{{name}}</h5>
+				<img src="{{imageURL}}" class="img-responsive">
+				<p>{{description}}</p>
+			</div>
+		{{/each}}
+	
+	<div class="search-options">
+		<a href="./">Back</a>
+		<a href="./result_next">No</a>
+		<a href="./place/{{output.[0].placeId}}">View</a>
+		<a href="./navigation">Map</a>
+	</div>
+
+	</div>
+
+
+
+
+</body>
+</html>

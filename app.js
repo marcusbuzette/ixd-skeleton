@@ -58,6 +58,7 @@ app.get('/place/:placeId', place.view);
 app.get('/place_back', result.back);
 app.get ('/map',map.view);
 app.get('/result_next',result.next);
+app.get('/result_search',result.search)
 app.get('/navigation',navigation.view);
 app.get('/share',share.view);
 
