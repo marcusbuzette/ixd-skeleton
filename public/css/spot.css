@@ -7,6 +7,11 @@ body {
      padding: 20px;
 }
 
+#placedescription{
+  line-height: 6px;
+  text-align: left;
+}
+
 
 #next{
   padding-top: 20vh;
@@ -115,7 +120,7 @@ input[type="submit"]{
 .mapnav{
   position: relative;
   width: 100%;
-  height: 480px;
+  height: 420px;
 }
 
 
@@ -327,7 +332,6 @@ a:hover {
   color: #0FA0CE; }
 
 
->>>>>>> 1d0427b00ca3df7288960274d53e1015ba5cc5fe
 .button,
 button,
 input[type="submit"],

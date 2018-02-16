@@ -23,18 +23,16 @@
 		<img src="{{output.[0].imageURL}}" class="img-responsive">
 		<div class="info">
 			{{#each output.[0].info}}
-				<h6>{{this}}</h6>
+				<p id="placedescription">{{this}}</p>
 			{{/each}}
 		</div>
 	
 	<div class="search-options">
-		
-		<a href="./result_next">No</a>
-		<a href="./place/{{output.[0].placeId}}">View</a>
-		<a href="./navigation">Map</a>
+		<button type="button"><a href="./result_next">No</a></button>
+		<button type="button"><a href="./place/{{output.[0].placeId}}">View</a></button>
+		<button type="button"><a href="./navigation">Map</a></button>
 	</div>
-	<br>
-	<a href="./">Back</a>
+	<br><a href="./">Back</a>
 
 	</div>
 
