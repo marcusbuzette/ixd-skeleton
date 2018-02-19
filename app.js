@@ -55,7 +55,6 @@ app.get('/favorites',favorites.view);
 app.get('/search', search.view);
 app.get('/profile',profile.view);
 app.get('/place/:placeId', place.view);
-app.get('/place_back', result.back);
 app.get ('/map',map.view);
 app.get('/result_next',result.next);
 app.get('/result_search',result.search)
