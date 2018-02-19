@@ -26,6 +26,33 @@ body {
 }
 
 
+#scroll:before{
+  content: '▾';
+  color: #fff;
+  position: absolute;
+  opacity: 0.5;
+  background: #000;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  bottom: 15%;
+  left: 85%;
+  animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
 .title{
   padding-top: 1vh;
   padding-bottom: 1vh;
@@ -77,7 +104,7 @@ position: absolute;
   margin-right: 10%;
 }
 .info{
-	padding-top: 10%;
+	padding-top: 5%;
   	padding-bottom: 10%;
   	text-align: center;
 }

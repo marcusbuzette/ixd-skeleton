@@ -14,16 +14,15 @@
 
 </head>
 <body>
-
 	<div class="container">
 	<div class=title>
 		<img src="{{placeToShow.imageURL}}" alt="{{placeToShow.name}}" class="img-responsive">
 		<h2>{{placeToShow.name}}</h2>
 	</div>
+	<div id="scroll"></div>
 	<div class="info">
-		<br>
-		<h3>{{placeToShow.mood}}</h3>
-		<h3>{{placeToShow.task}}</h3>
+		<h4>{{placeToShow.mood}}</h4>
+		<h4>{{placeToShow.task}}</h4>
 		{{#each placeToShow.info}}
 			<h5>{{this}}</h5>
 		{{/each}}
@@ -35,21 +34,13 @@
 			<img src="../images/2.jpg" alt="map" class="img">
 		</div>
 		
-		<br>
-		<a href="../navigation">Go</a> &nbsp;&nbsp;
-		<a href="../share">Share</a> &nbsp;&nbsp;
-		<a class= "unfa" href="../favorites">Favorite</a> &nbsp;&nbsp;
-		
-
 	</div>
-
-	<div>
-	    <a href="../place_back">Back</a>
-
+		<button type="button"><a href="../navigation">Go</a></button>
+		<button type="button"><a href="../share">Share</a></button>
+		<button type="button"><a class= "unfa" href="../favorites">Favorite</a></button>
+	    <button type="button"><a href="../place_back">Back</a></button>
 	</div>
-	<br><br><br>
-
-	</div>
+	<br><br>
 
 	<div class="icon-bar">
 	  <a href="../home"><i class="fa fa-home"></i></a> 
@@ -57,6 +48,6 @@
 	  <a href="../favorites"><i class="fa fa-heart"></i></a>
 	  <a href="../profile"><i class="fa fa-user"></i></a> 
 	</div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </body>
 </html>
