@@ -7,6 +7,13 @@ exports.view = function(req, res){
 	res.render('place' , {placeToShow: place});
 };
 
+exports.viewNL = function(req, res){
+	console.log(req.params.placeId);
+	var place = findPlace(req.params.placeId)
+	console.log(place);
+	res.render('placeNL' , {placeToShow: place});
+};
+
 function findPlace(id){
 	for (var i = data.places.length - 1; i >= 0; i--) {
 		if(data.places[i].placeId == id){

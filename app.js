@@ -49,17 +49,23 @@ if ('development' == app.get('env')) {
 
 app.get('/', index.view);
 app.get('/result', result.view);
+app.get('/resultNL', result.viewNL);
 app.get('/signup', signup.view);
 app.get('/login', login.view);
 app.get('/home', home.view);
 app.get('/favorites',favorites.view);
 app.get('/search', search.view);
+app.get('/searchNL', search.viewNL);
 app.get('/profile',profile.view);
 app.get('/place/:placeId', place.view);
+app.get('/placeNL/:placeId', place.viewNL);
 app.get ('/map',map.view);
 app.get('/result_next',result.next);
-app.get('/result_search',result.search)
+app.get('/resultNL_next',result.nextNL);
+app.get('/result_search',result.search);
+app.get('/result_searchNL',result.searchNL);
 app.get('/navigation',navigation.view);
+app.get('/navigationNL',navigation.viewNL);
 app.get('/share',share.view);
 app.get('/settings',settings.view);
 

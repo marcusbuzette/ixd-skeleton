@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SPOT</title>
+	<meta charset="UFT-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UFT-8">
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/spot.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+	<div class="container">
+	<div class=title>
+		<img src="{{placeToShow.imageURL}}" alt="{{placeToShow.name}}" class="img-responsive">
+		<h2>{{placeToShow.name}}</h2>
+	</div>
+	<div id="scroll"></div>
+	<div class="info">
+		<h4>{{placeToShow.mood}}</h4>
+		<h4>{{placeToShow.task}}</h4>
+		{{#each placeToShow.info}}
+			<h5>{{this}}</h5>
+		{{/each}}
+		<br>
+		<h4>Reviews</h4>
+		<p>{{placeToShow.description}}</p>
+		<div>
+			<h4>Directions</h4>
+			<img src="../images/2.jpg" alt="map" class="img">
+		</div>
+		
+
+	</div>
+		<button type="button"><a href="../navigationNL">Go</a></button>
+		<button type="button"><a href="../share">Share</a></button>
+		<button type="button"><a class= "unfa" href="../favorites">Favorite</a></button>
+	    <button type="button"><a href="../place_back">Back</a></button>
+
+	<div>
+	   <input type="button" value="Back" onclick="history.back()">
+
+	</div>
+	<br><br><br>
+	</div>
+	<br><br>
+
+	<div class="icon-bar">
+	  <a href="../"><i class="fa fa-home"></i></a> 
+	  <a href="../searchNL"><i class="fa fa-search"></i></a>  
+	  <a href="../login"><i class="fa fa-heart"></i></a>
+	  <a href="../login"><i class="fa fa-user"></i></a> 
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</body>
+</html>
