@@ -38,12 +38,17 @@
     	<option value="read">Read</option>
     	<option value="chat">Chat</option>
   	</select>
-  	<br>
+  	<br><br>
   	<input type="submit" value="Confirm">
-  	<br>
+  	<br><br>
+  	<div id="login">
   	<a href="signup"><button type="button">Sign up</button></a>
 	<a href="login"><button type="button">Log in</button></a>
-
+	<fb:login-button 
+  	scope="public_profile,email"
+  	onlogin="checkLoginState();">
+	</fb:login-button>
+	</div>
 
 	
 
@@ -60,6 +65,8 @@
 	<script src="js/jquery-1.11.0.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
 
 	
 
