@@ -20,6 +20,7 @@ var place = require("./routes/place");
 var map = require("./routes/map");
 var navigation = require("./routes/navigation");
 var share = require("./routes/share");
+var settings = require("./routes/settings");
 
 // Example route
 // var user = require('./routes/user');
@@ -60,6 +61,7 @@ app.get('/result_next',result.next);
 app.get('/result_search',result.search)
 app.get('/navigation',navigation.view);
 app.get('/share',share.view);
+app.get('/settings',settings.view);
 
 // Example route
 // app.get('/users', user.list);
