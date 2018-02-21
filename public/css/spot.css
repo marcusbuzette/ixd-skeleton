@@ -29,8 +29,9 @@ body {
 #scroll:before{
   content: '▾';
   color: #fff;
-  position: absolute;
-  opacity: 0.5;
+  position: fixed;
+  float: right;
+  opacity: 0.4;
   background: #000;
   font-size: 30px;
   width: 30px;
@@ -38,7 +39,7 @@ body {
   line-height: 30px;
   text-align: center;
   border-radius: 50%;
-  bottom: 15%;
+  bottom: 20%;
   left: 85%;
   animation: bounce 1s ease infinite;
 }
@@ -106,17 +107,20 @@ position: absolute;
 .info{
 	padding-top: 5%;
   	padding-bottom: 10%;
-  	text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+  	text-align: left;
 }
 
 .info p{
-padding-left: 10%;
-	max-width: 80%;
+  text-align: left;
+}
 }
 
 .info img{
 	width:80%;
 }
+
 
 .back{
 	text-align: center;
@@ -374,7 +378,7 @@ input[type="reset"],
 input[type="button"] {
   display: inline-block;
   height: 38px;
-  padding: 0 30px;
+  padding: 0 25px;
   color: #555;
   text-align: center;
   font-size: 12px;
@@ -528,3 +532,12 @@ li {
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+
+
+.placemood, .placetask{
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+}
+
