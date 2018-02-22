@@ -10,6 +10,11 @@
 	<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="../css/spot.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="/js/jquery-1.11.0.js"></script>
+	<script src="/js/bootstrap.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/favorite.js"></script>
+	
 
 
 </head>
@@ -29,6 +34,7 @@
 		<br>
 		<h4>Reviews</h4>
 		<p>{{placeToShow.description}}</p>
+		
 		<div>
 			<h4>Directions</h4>
 			<img src="../images/2.jpg" alt="map" class="img">
@@ -38,13 +44,28 @@
 	</div>
 		<button type="button"><a href="../navigation">Go</a></button>
 		<button type="button"><a href="../share">Share</a></button>
-		<button type="button"><a class= "unfa" href="../favorites">Favorite</a></button>
-	    <button type="button"><a href="../place_back">Back</a></button>
+		<button id= "unfa" type="button">Favorite</button>
+		
+
+
+	<form id="addFriendForm" role="form" method="get" action="/add">
+		
+	    <div class="form-group">
+	      <label for="name">Add a Review</label>
+	      <input type="text" class="form-control" id="review" placeholder="Review" name="name">
+	    </div>
+	   
+	    <input type="submit" id="submitBtn" class="btn btn-default" value="Confirm"></input>
+	</form>
 
 	<div>
 	   <input type="button" value="Back" onclick="history.back()">
 
 	</div>
+
+
+
+
 	<br><br><br>
 	</div>
 	<br><br>
@@ -56,5 +77,6 @@
 	  <a href="../profile"><i class="fa fa-user"></i></a> 
 	</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
 </body>
 </html>
