@@ -7,7 +7,7 @@
 	<meta charset="UFT-8">
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
 	<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
-
+	<link rel="stylesheet" href="css/vis.min.css">
 	<link rel="stylesheet" href="../css/spot.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -18,28 +18,20 @@
 		<h2>Home Page</h2>	
 		<br>
 		 <div class="tip"><i class="fa fa-question-circle"></i>
-  		<span class="tiptext">Set your current mood and task, then SPOT will give you smart recommendation of suitable place to explore :)
-  		</span></div>
+	  		<span class="tiptext">Set your current mood and task, then SPOT will give you 	smart recommendation of suitable place to explore :)
+	  		</span>
+  		</div>
 		<br>
-	<form action="./result">
-  		<h4>Set Mood</h4>
-  		<select name="mood"> 
-	    	<option value="happy">Happy</option>
-	    	<option value="sad">Sad</option>
-	    	<option value="relax">Relax</option>
-	    	<option value="agitated">Agitated</option>
-  		</select>
-  		<br>
-  		<h4>Set Task</h4>
-	  	<select name="task">
-	    	<option value="groupstudy">Group Study</option>
-	    	<option value="laptop">Work on laptop</option>
-	    	<option value="read">Read</option>
-	    	<option value="chat">Chat</option>
-	  	</select>
-  		<br><br><br><br>
-  		<input type="submit" value="Confirm">
-	</form>
+		<div id="selection">
+			<h5>Set Mood</h5>
+	  		<div id="bubbles"></div>
+	  		<br>
+	  		<h5>Set Task</h5>
+		  	<div id="bubbles2"></div>
+		  	<br><br><br><br><br><br>
+		  	<a id="confirm" href="./resultNL"><button type="button">Confirm</button></a>
+		</div>
+		
 	</div>
 
 	<div class="icon-bar">
@@ -52,6 +44,8 @@
 	<script src="/js/jquery-1.11.0.js"></script>
 	<script src="/js/bootstrap.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<script src="js/vis.min.js"></script>
+	<script src="js/homepage.js"></script>
 
 
 </body>

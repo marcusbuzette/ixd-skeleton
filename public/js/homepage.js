@@ -1,13 +1,16 @@
-
+var globalMood;
+var globalTask;
 
 var nodes = new vis.DataSet([
-  {label: "Group Study"},
-  {label: "Work on laptop"},
-  {label: "Read"},
-  {label: "Chat"},
-  {label: "Sleep"},
+  {label: "Group Study",tag: "groupstudy"},
+  {label: "Work on laptop",tag: "laptop"},
+  {label: "Read",tag: "read"},
+  {label: "Chat", tag: "chat"},
+  {label: "Sleep",tag: "sleep"},
 
 ]);
+
+
 
 var edges = new vis.DataSet();
 
@@ -36,7 +39,10 @@ var network = new vis.Network(container, data, options);
 network.on("click", function(e) {
   if (e.nodes.length) {
     var node = nodes.get(e.nodes[0]);
-    // Do something
+    console.log(node.tag);
+    globalTask = node.tag;
+    console.log(globalTask);
+    $("#confirm").attr("href","http://localhost:3000/result?mood="+globalMood+"&task="+globalTask);
     nodes.update(node);
   }
 });
@@ -46,11 +52,11 @@ network.on("click", function(e) {
 
 
 var moods = new vis.DataSet([
-  {label: "Happy    "},
-  {label: "Bored"},
-  {label: "Sad"},
-  {label: "Agitated jijfer "},
-  {label: "Excited"},
+  {label: "Happy    ", tag: "happy"},
+  {label: "Bored", tag: "bored"},
+  {label: "Sad", tag: "sad"},
+  {label: "Agitated jijfer ", tag: "agitated"},
+  {label: "Excited", tag: "excited"},
 
 ]);
 
@@ -80,7 +86,9 @@ var networkm = new vis.Network(containerm, datam, optionsm);
 networkm.on("click", function(e) {
   if (e.nodes.length) {
     var nodem = moods.get(e.nodes[0]);
-    // Do something
+    console.log(nodem.tag);
+    globaMood = nodem.tag;
+    $("#confirm").attr("href","http://localhost:3000/result?mood="+globalMood+"&task="+globalTask);
     moods.update(nodem);
   }
 });
