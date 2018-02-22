@@ -24,13 +24,22 @@
   		<div id="bubbles"></div>
   		<br>
   		<h5>Set Task</h5>
+
 	  	<div id="bubbles2"></div>
 	  	<br><br><br><br><br><br>
 	  	<a id="confirm" href="./resultNL"><button type="button">Confirm</button></a>
 	  	<br>
-  	<a href="signup"><button type="button">Sign up</button></a>
-	<a href="login"><button type="button">Log in</button></a>
 
+  	<br><br>
+  	<div id="login">
+
+	  	<a href="signup"><button type="button">Sign up</button></a>
+		<a href="login"><button type="button">Log in</button></a>
+		<fb:login-button 
+	  	scope="public_profile,email"
+	  	onlogin="checkLoginState();">
+		</fb:login-button>
+	</div>
 
 	
 
@@ -46,9 +55,15 @@
 	
 	<script src="js/jquery-1.11.0.js"></script>
 	<script src="js/bootstrap.js"></script>
+
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/vis.min.js"></script>
 	<script src="js/homepage.js"></script>
+
+
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
+
 
 	
 

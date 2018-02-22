@@ -21,25 +21,20 @@
 	</div>
 	<div id="scroll"></div>
 	<div class="info">
-		<h4>{{placeToShow.mood}}</h4>
-		<h4>{{placeToShow.task}}</h4>
+		<h4 class="placemood" ="">{{placeToShow.mood}}</h4>
+		<h4 class="placetask">{{placeToShow.task}}</h4>
 		{{#each placeToShow.info}}
 			<h5>{{this}}</h5>
 		{{/each}}
 		<br>
 		<h4>Reviews</h4>
 		<p>{{placeToShow.description}}</p>
-		<div>
-			<h4>Directions</h4>
-			<img src="../images/2.jpg" alt="map" class="img">
-		</div>
 		
 
 	</div>
 		<button type="button"><a href="../navigation">Go</a></button>
 		<button type="button"><a href="../share">Share</a></button>
 		<button type="button"><a class= "unfa" href="../favorites">Favorite</a></button>
-	    <button type="button"><a href="../place_back">Back</a></button>
 
 	<div>
 	   <input type="button" value="Back" onclick="history.back()">

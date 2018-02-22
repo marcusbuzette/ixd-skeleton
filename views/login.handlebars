@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/spot.css">
 </head>
 <body>
+
 	<div class="container">
 		<div>
 			<br><br>	
@@ -21,16 +22,23 @@
 				<br>
 				<input type="submit" value="Log In">
 				</form>
-				<br>
-			
 		</div>
-	<br><br>
+	
+<p class="facebookLogin">Or Login through Facebook <br>
+		<fb:login-button 
+  	scope="public_profile,email"
+  	onlogin="checkLoginState();" style="padding-top: 8px;">
+	</fb:login-button>
 
+	</p>
+	<br><br>
 	<input type="button" value="Back" onclick="history.back()">
 
 </div>
-
-	
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+{{> facebook}}
+<script src="/js/facebook.js"></script>
 	
 
 </body>
