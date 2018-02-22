@@ -12,7 +12,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 75%;
 }
 
 #placedescription{
@@ -29,8 +29,9 @@ body {
 #scroll:before{
   content: '▾';
   color: #fff;
-  position: absolute;
-  opacity: 0.5;
+  position: fixed;
+  float: right;
+  opacity: 0.4;
   background: #000;
   font-size: 30px;
   width: 30px;
@@ -38,7 +39,7 @@ body {
   line-height: 30px;
   text-align: center;
   border-radius: 50%;
-  bottom: 15%;
+  bottom: 20%;
   left: 85%;
   animation: bounce 1s ease infinite;
 }
@@ -106,17 +107,20 @@ position: absolute;
 .info{
 	padding-top: 5%;
   	padding-bottom: 10%;
-  	text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+  	text-align: left;
 }
 
 .info p{
-padding-left: 10%;
-	max-width: 80%;
+  text-align: left;
+}
 }
 
 .info img{
 	width:80%;
 }
+
 
 .back{
 	text-align: center;
@@ -144,11 +148,6 @@ input[type="submit"]{
   cursor: pointer;
 }
 
-/* search option 
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.search-option{
-
-}
 
 /* Map Navigation 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -158,6 +157,28 @@ input[type="submit"]{
   height: 420px;
 }
 
+
+#login a{
+  float: left;
+  width: 38%;
+  display: block;
+  text-align: center;
+  font-weight: normal;
+}
+
+#login button{
+  font-weight: bold;
+  border: 1.5px solid gray;
+  background-color: rgba(244, 179, 66,0.6);
+}
+
+#login button:hover, #login button:active{
+  background-color: rgba(244, 179, 66,1)
+}
+
+.fb:login-button{
+  padding-top: 10px;
+}
 
 /*icon bar 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -336,7 +357,7 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
   font-weight: 300;}
 h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem; font-weight: normal;}
 h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; font-weight: normal;}
@@ -374,7 +395,7 @@ input[type="reset"],
 input[type="button"] {
   display: inline-block;
   height: 38px;
-  padding: 0 30px;
+  padding: 0 25px;
   color: #555;
   text-align: center;
   font-size: 12px;
@@ -442,8 +463,8 @@ input[type="url"],
 input[type="password"],
 textarea,
 select {
-  height: 38px;
-  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  height: 35px;
+  padding: 6px 8px; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
   border: 1px solid #D1D1D1;
   border-radius: 4px;
@@ -483,7 +504,7 @@ input,
 textarea,
 select,
 fieldset {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1rem; }
 pre,
 blockquote,
 dl,
@@ -493,7 +514,7 @@ p,
 ul,
 ol,
 form {
-  margin-bottom: 2.5rem; }
+  margin-bottom: 2rem; }
 
 
 /* Lists
@@ -528,3 +549,12 @@ li {
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+
+
+.placemood, .placetask{
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+}
+

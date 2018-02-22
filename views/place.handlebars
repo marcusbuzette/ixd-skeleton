@@ -26,19 +26,15 @@
 	</div>
 	<div id="scroll"></div>
 	<div class="info">
-		<h4>{{placeToShow.mood}}</h4>
-		<h4>{{placeToShow.task}}</h4>
+		<h4 class="placemood" ="">{{placeToShow.mood}}</h4>
+		<h4 class="placetask">{{placeToShow.task}}</h4>
 		{{#each placeToShow.info}}
 			<h5>{{this}}</h5>
 		{{/each}}
 		<br>
 		<h4>Reviews</h4>
 		<p>{{placeToShow.description}}</p>
-		
-		<div>
-			<h4>Directions</h4>
-			<img src="../images/2.jpg" alt="map" class="img">
-		</div>
+
 		
 
 	</div>
@@ -57,6 +53,7 @@
 	   
 	    <input type="submit" id="submitBtn" class="btn btn-default" value="Confirm"></input>
 	</form>
+
 
 	<div>
 	   <input type="button" value="Back" onclick="history.back()">
