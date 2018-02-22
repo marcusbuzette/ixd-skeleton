@@ -42,7 +42,7 @@ network.on("click", function(e) {
     console.log(node.tag);
     globalTask = node.tag;
     console.log(globalTask);
-    $("#confirm").attr("href","http://localhost:3000/result?mood="+globalMood+"&task="+globalTask);
+    $("#confirm").attr("href","http://localhost:3000/resultNL?mood="+globalMood+"&task="+globalTask);
     nodes.update(node);
   }
 });
@@ -87,8 +87,8 @@ networkm.on("click", function(e) {
   if (e.nodes.length) {
     var nodem = moods.get(e.nodes[0]);
     console.log(nodem.tag);
-    globaMood = nodem.tag;
-    $("#confirm").attr("href","http://localhost:3000/result?mood="+globalMood+"&task="+globalTask);
+    globalMood = nodem.tag;
+    $("#confirm").attr("href","http://localhost:3000/resultNL?mood="+globalMood+"&task="+globalTask);
     moods.update(nodem);
   }
 });
