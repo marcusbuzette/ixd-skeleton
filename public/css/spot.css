@@ -156,21 +156,14 @@ input[type="submit"]{
 }
 
 
-#login  a{
-  float: left;
-  width: 38%;
-  display: block;
-  text-align: center;
-  font-weight: normal;
-}
 
-#login-button {
+.highlight-button {
   font-weight: bold;
   border: 1px solid gray;
   background-color: rgba(244, 179, 66,0.6);
 }
 
-#login button:hover, #login button:active{
+.highlight-button:hover, #highlight-button:active{
   background-color: rgba(244, 179, 66,1)
 }
 

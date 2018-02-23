@@ -22,20 +22,22 @@
         padding: 0;
       }
       #floating-panel {
-        position: absolute;
+        position: fixed;
         width: 55%;
-        height: 30%;
+        height: 25%;
         top: 10%;
         z-index: 5;
         background-color: #fff;
-        padding: 5px;
+        padding: 8px;
         border: 1px solid #999;
-        border-radius: 5px;
+        border-radius: 8px;
         text-align: left;
         font-family: 'Roboto','sans-serif';
-        line-height: 20px;
+        font-size: 10px;
+        line-height: 15px;
         padding-left: 10px;
       }
+
     </style>
   </head>
 
@@ -44,9 +46,10 @@
     <b>Start: </b>
     <select id="start">
       <option value="UCSD, San Diego, CA">My Current Position</option>
-      <option value="UCSD, San Diego, CA">UCSD</option>
-      <option value="La Jolla Shores, San Diego, CA 92037">La Jolla Shores</option>
-      <option value="Downtown, San Diego, CA">Downtown San Diego</option>
+      <option value="UCSD, San Diego, CA">Geisel Library</option>
+      <option value="La Jolla Cove, San Diego, CA 92037">La Jolla Cove</option>
+      <option value="Downtown, San Diego, CA">Nobel Library</option>
+      <option value="4655 Executive Dr, San Diego, CA 92121">North Beach Bistro</option>
 
     </select>
     <b>End: </b>
@@ -54,7 +57,11 @@
       <option value="873 Turquoise St, San Diego, CA 92109">Jazz Cafe</option>
       <option value="Rimac Annex, San Diego, CA 92121">Dennis Bar</option>
       <option value="Sun God Lounge, Gilman Dr, San Diego, CA">Sungod Lounge</option>
-      <option value="UCSD, San Diego, CA">Home - UCSD</option>
+      
+      <option value="UCSD, San Diego, CA">Geisel Library</option>
+      <option value="La Jolla Cove, San Diego, CA 92037">La Jolla Cove</option>
+      <option value="Downtown, San Diego, CA">Nobel Library</option>
+      <option value="4655 Executive Dr, San Diego, CA 92121">North Beach Bistro</option>
     </select>
     </div>
     <div id="map"></div>
