@@ -6,7 +6,7 @@ var nodes = new vis.DataSet([
   {label: "Work on laptop",tag: "laptop"},
   {label: "Read",tag: "read"},
   {label: "Chat", tag: "chat"},
-  {label: "Sleep",tag: "sleep"},
+  {label: "  Relax ", tag: "relax"},
 
 ]);
 
@@ -21,7 +21,7 @@ var data = {
 };
 
 var options = {
-  nodes: {borderWidth:0,shape:"circle",color:{background:'#F92C55', highlight:{background:'#F92C55', border: '#F92C55'}},font:{color:'#fff'}},
+  nodes: {borderWidth:0,shape:"circle",color:{background:'#b7b7b7', border:'#f4b342', highlight:{background:'#f4b342', border: '#707070'}},font:{color:'#fff'}},
   physics: {
     stabilization: false,
     minVelocity:  0.01,
@@ -52,11 +52,11 @@ network.on("click", function(e) {
 
 
 var moods = new vis.DataSet([
-  {label: "Happy    ", tag: "happy"},
-  {label: "Bored", tag: "bored"},
+  {label: "   Happy    ", tag: "happy"},
+  {label: "   Bored  ", tag: "bored"},
   {label: "Sad", tag: "sad"},
-  {label: "Agitated jijfer ", tag: "agitated"},
-  {label: "Excited", tag: "excited"},
+  {label: "Agitated", tag: "agitated"},
+  {label: " Excited ", tag: "excited"},
 
 ]);
 
@@ -69,7 +69,7 @@ var datam = {
 };
 
 var optionsm = {
-  nodes: {borderWidth:0,shape:"circle",color:{background:'#F92C55', highlight:{background:'#F92C55', border: '#F92C55'}},font:{color:'#fff'}},
+  nodes: {borderWidth:0,shape:"circle",color:{background:'#b7b7b7', border:'#f4b342', highlight:{background:'#f4b342', border: '#707070'}},font:{color:'#fff'}},
   physics: {
     stabilization: false,
     minVelocity:  0.01,
