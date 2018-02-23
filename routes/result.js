@@ -18,6 +18,7 @@ exports.view = function(req, res){
 	}
 	globalList = resultList;
 	nextList = globalList;
+	nextList["logged"] = true;
 	res.render('result', {output: nextList})
 
 	
@@ -38,7 +39,8 @@ exports.viewNL = function(req, res){
 	}
 	globalList = resultList;
 	nextList = globalList;
-	res.render('resultNL', {output: nextList})
+	nextList["notLogged"] = false;
+	res.render('result', {output: nextList})
 
 	
 };
@@ -50,6 +52,7 @@ exports.next = function(req,res){
 		nextList.push(aux);
 	}else{
 	}
+	nextList["logged"] = true;
 	res.render('result', {output: nextList})
 }
 
@@ -60,7 +63,8 @@ exports.nextNL = function(req,res){
 		nextList.push(aux);
 	}else{
 	}
-	res.render('resultNL', {output: nextList})
+	nextList["notLogged"] = false;
+	res.render('result', {output: nextList})
 }
 
 exports.back = function(req,res){
@@ -81,6 +85,7 @@ exports.search = function(req, res){
 		}
 		
 	}
+	resultList["logged"] = true;
 	console.log(resultList);
 	res.render('searchList', {output: resultList})
 
@@ -101,8 +106,9 @@ exports.searchNL = function(req, res){
 		}
 		
 	}
+	resultList["logged"] = false;
 	console.log(resultList);
-	res.render('searchListNL', {output: resultList})
+	res.render('searchList', {output: resultList})
 
 	
 };

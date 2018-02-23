@@ -3,6 +3,7 @@ var data = require('../data.json');
 exports.view = function(req, res){
 	console.log(req.params.placeId);
 	var place = findPlace(req.params.placeId)
+	place["logged"] = true;
 	console.log(place);
 	res.render('place' , {placeToShow: place});
 };
@@ -10,8 +11,9 @@ exports.view = function(req, res){
 exports.viewNL = function(req, res){
 	console.log(req.params.placeId);
 	var place = findPlace(req.params.placeId)
+	place["logged"] = false;
 	console.log(place);
-	res.render('placeNL' , {placeToShow: place});
+	res.render('place' , {placeToShow: place});
 };
 
 function findPlace(id){

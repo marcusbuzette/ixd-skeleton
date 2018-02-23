@@ -16,15 +16,28 @@
 		<br>
 		<h2>Results</h2>
 		<br>
-		{{#each output}}
-			<a href="./place/{{placeId}}">
-				<div class="thumbnail">
-					<h5>{{name}}</h5>
-					<img src="{{imageURL}}" class="img-responsive">
-					<p>{{description}}</p>
-				</div>
-			</a>
-		{{/each}}
+		{{#if output.logged}}
+	  		{{#each output}}
+				<a href="./place/{{placeId}}">
+					<div class="thumbnail">
+						<h5>{{name}}</h5>
+						<img src="{{imageURL}}" class="img-responsive">
+						<p>{{description}}</p>
+					</div>
+				</a>
+			{{/each}}
+		{{else}}
+			{{#each output}}
+				<a href="./placeNL/{{placeId}}">
+					<div class="thumbnail">
+						<h5>{{name}}</h5>
+						<img src="{{imageURL}}" class="img-responsive">
+						<p>{{description}}</p>
+					</div>
+				</a>
+			{{/each}}
+		{{/if}}
+		
 	
 	<div class="search-options">
 		<input type="button" value="Back" onclick="history.back()">
