@@ -20,50 +20,68 @@
 </head>
 <body>
 	<div class="container">
-	<div class=title>
-		<img src="{{placeToShow.imageURL}}" alt="{{placeToShow.name}}" class="img-responsive">
-		<h2>{{placeToShow.name}}</h2>
-	</div>
+		<div class=title>
+			<img src="{{placeToShow.imageURL}}" alt="{{placeToShow.name}}" class="img-responsive">
+			<h2>{{placeToShow.name}}</h2>
+		</div>
 
-		<a href="../share"><button type="button">Share</button></a>
-		<button id= "unfa" type="button">Favorite</button>
-		<a href="../navigation"><button type="button">Go</button></a>
+		{{#if placeToShow.logged}}
+			<a href="../share"><button type="button">Share</button></a>
+			<button id= "unfa" type="button">Favorite</button>
+			<a href="../navigation"><button type="button">Go</button></a>
+		{{else}}
+			<a href="../login"><button type="button">Share</button></a>
+			<button id= "unfa" type="button">Favorite</button>
+			<a href="../navigationNL"><button type="button">Go</button></a>
+		{{/if}}
 
-	<div id="scroll"></div>
-	<div class="info">
-		<h4 class="placemood">{{placeToShow.mood}}</h4>
-		<h4 class="placetask">{{placeToShow.task}}</h4>
-		{{#each placeToShow.info}}
-			<h5>{{this}}</h5>
-		{{/each}}
-		<br>
-		<h4>Reviews</h4>
-		<p>{{placeToShow.description}}</p>
-	</div>
 		
 
-	<form id="addFriendForm" role="form" method="get" action="/add">
-	    <div class="form-group">
-	      <label for="name">Add Your Review</label>
-	      <input type="text" class="form-control" id="review" placeholder="Review" name="name">
-	    </div>
-	   
-	    <input type="submit" id="submitBtn" class="btn btn-default" value="Confirm"></input>
-	</form>
-	<br><br>
+		<div id="scroll"></div>
+		<div class="info">
+			<h4 class="placemood">{{placeToShow.mood}}</h4>
+			<h4 class="placetask">{{placeToShow.task}}</h4>
+			{{#each placeToShow.info}}
+				<h5>{{this}}</h5>
+			{{/each}}
+			<br>
+			<h4>Reviews</h4>
+			<p>{{placeToShow.description}}</p>
+		</div>
+			
 
-	<div>
-	   <input type="button" value="Back" onclick="history.back()">
+		<form id="addFriendForm" role="form" method="get" action="/add">
+		    <div class="form-group">
+		      <label for="name">Add Your Review</label>
+		      <input type="text" class="form-control" id="review" placeholder="Review" name="name">
+		    </div>
+		   
+		    <input type="submit" id="submitBtn" class="btn btn-default" value="Confirm"></input>
+		</form>
+		<br><br>
+
+		<div>
+		   <input type="button" value="Back" onclick="history.back()">
+		</div>
+
 	</div>
 
-
-	</div>
-	<div class="icon-bar">
-	  <a href="../home"><i class="fa fa-home"></i></a> 
-	  <a href="../search"><i class="fa fa-search"></i></a>  
-	  <a href="../favorites"><i class="fa fa-heart"></i></a>
-	  <a href="../profile"><i class="fa fa-user"></i></a> 
-	</div>
+	{{#if placeToShow.logged}}
+		<div class="icon-bar">
+		  	<a href="../home"><i class="fa fa-home"></i></a> 
+		  	<a href="../search"><i class="fa fa-search"></i></a>  
+			<a href="../favorites"><i class="fa fa-heart"></i></a>
+			<a href="../profile"><i class="fa fa-user"></i></a> 
+		</div>
+	{{else}}
+		<div class="icon-bar">
+		  <a href="../"><i class="fa fa-home"></i></a> 
+		  <a href="../searchNL"><i class="fa fa-search"></i></a>  
+		  <a href="../login"><i class="fa fa-heart"></i></a>
+		  <a href="../login"><i class="fa fa-user"></i></a> 
+		</div>
+	{{/if}}
+	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 </body>
