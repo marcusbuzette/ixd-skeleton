@@ -74,26 +74,25 @@ body {
   text-align: center;
 }
 
-#bubbles {
+#bubblemood {
 position: absolute;
     /* width: 40vw; */
     height: 18vh;
-    top: 180;
+    top: 170;
     left: 100;
     max-width: 1300px;
     /* margin: 0 100px 0 100px; */
     box-sizing: border-box;
     display: inline-block;
-    margin-top: 45%;
-    /* margin-left: 0%; */
-    margin-right: 10%;
+    
+    /* margin-top: 45%; margin-left: 0%; */
 }
 
-#bubbles2 {
+#bubbletask {
   position: absolute;
   /* width: 40vw; */
   height: 18vh;
-  top: 180;
+  top: 170;
   left: 100;
   max-width: 1300px;
   margin: 0 auto;
@@ -102,7 +101,6 @@ position: absolute;
   display: inline-block;
 
   margin-left: 0%;
-  margin-right: 10%;
 }
 .info{
 	padding-top: 5%;
@@ -158,7 +156,7 @@ input[type="submit"]{
 }
 
 
-#login a{
+#login  a{
   float: left;
   width: 38%;
   display: block;
@@ -166,18 +164,14 @@ input[type="submit"]{
   font-weight: normal;
 }
 
-#login button{
+#login-button {
   font-weight: bold;
-  border: 1.5px solid gray;
+  border: 1px solid gray;
   background-color: rgba(244, 179, 66,0.6);
 }
 
 #login button:hover, #login button:active{
   background-color: rgba(244, 179, 66,1)
-}
-
-.fb:login-button{
-  padding-top: 10px;
 }
 
 /*icon bar 

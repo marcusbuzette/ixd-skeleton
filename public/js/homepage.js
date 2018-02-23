@@ -14,7 +14,7 @@ var nodes = new vis.DataSet([
 
 var edges = new vis.DataSet();
 
-var container = document.getElementById('bubbles');
+var container = document.getElementById('bubblemood');
 var data = {
   nodes: nodes,
   edges: edges
@@ -62,7 +62,7 @@ var moods = new vis.DataSet([
 
 var edgem = new vis.DataSet();
 
-var containerm = document.getElementById('bubbles2');
+var containerm = document.getElementById('bubbletask');
 var datam = {
   nodes: moods,
   edges: edgem
