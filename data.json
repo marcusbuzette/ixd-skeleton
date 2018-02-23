@@ -3,7 +3,7 @@
 		{
 			"placeId": "1",
 			"name": "Jazz Cafe",
-			"description": "Nice jazz music and nice ice coffee" ,
+			"description": ["Nice jazz music and nice ice coffee"] ,
 			"imageURL": "../images/1.png",
 			"info" : ["Noise Level: LOW",
 					  "Pet Friendly: YES",
@@ -20,7 +20,7 @@
 		{
 			"placeId" : "2",
 			"name": "Sungod Lounge",
-			"description": "Nice spot for group study ",
+			"description": ["Nice spot for group study "],
 			"imageURL": "../images/7.jpeg",
 			"info" : ["Noise Level: MEDIUM",
 					  "Pet Friendly: YES",
@@ -37,7 +37,7 @@
 		{
 			"placeId" : "3",
 			"name": "Dennis Bar",
-			"description": "Nice place to see the sunset and chill with your friends",
+			"description": ["Nice place to see the sunset and chill with your friends"],
 			"imageURL": "../images/6.jpg",
 			"info" : ["Open Until: 2AM", "Noise Level: HIGH", "Wifi Availability: NO","Outdoor Setting: YES"],
 			"mood" : ["happy"],
@@ -51,7 +51,7 @@
 		{
 			"placeId": "4",
 			"name": "La Jolla Cove",
-			"description": "Nice Ocean view" ,
+			"description": ["Nice Ocean view"],
 			"imageURL": "../images/5.jpg",
 			"info" : [ "Noise Level: MEDIUM",
 					  "Pet Friendly: YES",
@@ -69,7 +69,7 @@
 		{
 			"placeId": "5",
 			"name": "Nobel Library ",
-			"description": "Nice library with many books and kids zone" ,
+			"description": ["Nice library with many books and kids zone"] ,
 			"imageURL": "../images/4.jpg",
 			"info" : [ "Noise Level: LOW",
 					  "Pet Friendly: NO",
@@ -86,7 +86,7 @@
 		{
 			"placeId" : "6",
 			"name": "Geisel Library",
-			"description": "Big library for study alone and group study.",
+			"description": ["Big library for study alone and group study."],
 			"imageURL": "../images/3.jpg",
 			"info" : ["Noise Level: MEDIUM/LOW",
 					  "Pet Friendly: YES",
@@ -103,7 +103,7 @@
 		{
 			"placeId" : "7",
 			"name": "North Beach Bistro",
-			"description": "Good wine and nice place to hang out",
+			"description": ["Good wine and nice place to hang out"],
 			"imageURL": "../images/8.jpg",
 			"info" : ["Noise Level: MEDIUM",
 					  "Pet Friendly: YES",
