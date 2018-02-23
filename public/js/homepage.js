@@ -57,6 +57,7 @@ var moods = new vis.DataSet([
   {label: "Sad", tag: "sad"},
   {label: "Agitated", tag: "agitated"},
   {label: " Excited ", tag: "excited"},
+  {label: " Focus ", tag: "focus"},
 
 ]);
 
