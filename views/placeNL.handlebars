@@ -10,6 +10,10 @@
 	<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="../css/spot.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="/js/jquery-1.11.0.js"></script>
+	<script src="/js/bootstrap.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/favorite.js"></script>
 
 
 </head>
@@ -36,16 +40,7 @@
 		<p>{{placeToShow.description}}</p>
 	</div>
 
-<form id="addFriendForm" role="form" method="get" action="/review">
-	    <div class="form-group">
-	      <label for="name">Add Your Review</label>
-	      <input type="text" class="form-control" id="review" placeholder="Review" name="name">
-	    </div>
-	   
-	    <input type="submit" id="submitBtn" class="btn btn-default" value="Confirm"></input>
-	</form>
-	<br><br>
-	<div>
+
 	   <input type="button" value="Back" onclick="history.back()">
 
 	</div>

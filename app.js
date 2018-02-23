@@ -21,7 +21,7 @@ var map = require("./routes/map");
 var navigation = require("./routes/navigation");
 var share = require("./routes/share");
 var settings = require("./routes/settings");
-var review = require('./routes/review');
+//var review = require('./routes/review');
 
 // Example route
 // var user = require('./routes/user');
@@ -69,7 +69,7 @@ app.get('/navigation',navigation.view);
 app.get('/navigationNL',navigation.viewNL);
 app.get('/share',share.view);
 app.get('/settings',settings.view);
-app.get('/review', review.addReview);
+//app.get('/review', review.addReview);
 
 // Example route
 // app.get('/users', user.list);
