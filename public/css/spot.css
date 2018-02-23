@@ -6,6 +6,7 @@ p{
 
 body {
      padding: 20px;
+     padding-bottom: 50px;
 }
 
 #logo{
@@ -80,10 +81,11 @@ position: absolute;
     height: 18vh;
     top: 170;
     left: 100;
-    max-width: 1300px;
+    max-width: 1200px;
     /* margin: 0 100px 0 100px; */
     box-sizing: border-box;
     display: inline-block;
+    margin: auto;
     
     /* margin-top: 45%; margin-left: 0%; */
 }
@@ -94,13 +96,11 @@ position: absolute;
   height: 18vh;
   top: 170;
   left: 100;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
- 
   box-sizing: border-box; 
   display: inline-block;
-
-  margin-left: 0%;
+  margin: auto;
 }
 .info{
 	padding-top: 5%;
