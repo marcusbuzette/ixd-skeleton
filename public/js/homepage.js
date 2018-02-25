@@ -4,9 +4,9 @@ var globalTask;
 var nodes = new vis.DataSet([
   {label: "Group Study",tag: "groupstudy"},
   {label: "Work on laptop",tag: "laptop"},
-  {label: "Read",tag: "read"},
-  {label: "Chat", tag: "chat"},
-  {label: "  Relax ", tag: "relax"},
+  {label: "     Read ",tag: "read"},
+  {label: "     Chat  ", tag: "chat"},
+  {label: "    Relax ", tag: "relax"},
 
 ]);
 
@@ -54,10 +54,10 @@ network.on("click", function(e) {
 var moods = new vis.DataSet([
   {label: "   Happy    ", tag: "happy"},
   {label: "   Bored  ", tag: "bored"},
-  {label: "Sad", tag: "sad"},
+  {label: "  Sad  ", tag: "sad"},
   {label: "Agitated", tag: "agitated"},
   {label: " Excited ", tag: "excited"},
-  {label: " Focus ", tag: "focus"},
+  {label: "   Focus ", tag: "focus"},
 
 ]);
 
