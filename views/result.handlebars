@@ -13,7 +13,6 @@
 </head>
 <body>
 	<div class="container">
-		<br>
 		<h2>Results</h2>
 		<div class="tip"><i class="fa fa-question-circle"></i>
   		<span class="tiptext">Here are some recommendations for you! Select No to see another option, select Yes to open navigation or select View to see more details :)
@@ -33,19 +32,36 @@
 				<a href="./place/{{output.[0].placeId}}"><button type="button">View</button></a>
 				<a href="./navigation"><button type="button">Go!</button></a>
 			</div>
+			</div>
+			<div class="icon-bar">
+			<a href="./home"><i class="fa fa-home"></i></a> 
+		  	<a href="./search"><i class="fa fa-search"></i></a>  
+			<a href="./favorites"><i class="fa fa-heart"></i></a>
+			<a href="./profile"><i class="fa fa-user"></i></a> 
+		</div>
 		{{else}}
 			<div class="search-options">
 				<a href="./resultNL_next"><button type="button">No</button></a>
 				<a href="./placeNL/{{output.[0].placeId}}"><button type="button">View</button></a>
 				<a href="./navigationNL"><button type="button">Go!</button></a>
-			</div>
+			
+		<div class="icon-bar">
+			<a href="./"><i class="fa fa-home"></i></a> 
+			<a href="./searchNL"><i class="fa fa-search"></i></a>  
+			<a href="./login"><i class="fa fa-heart"></i></a>
+			<a href="./login"><i class="fa fa-user"></i></a> 
+		</div>
 		{{/if}}
 	<br>
 	<input type="button" value="Back" onclick="history.back()">
-
-
 	</div>
 
+	<!-- <div class="icon-bar">
+		<a href="./home"><i class="fa fa-home"></i></a> 
+	  	<a href="./search"><i class="fa fa-search"></i></a>  
+	  	<a href="./favorites"><i class="fa fa-heart"></i></a>
+	  	<a href="./profile"><i class="fa fa-user"></i></a>
+	</div>  -->
 
 
 
