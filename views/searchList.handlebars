@@ -44,12 +44,23 @@
 	</div>
 
 	</div>
-	<div class="icon-bar">
-		<a  href="./home"><i class="fa fa-home"></i></a> 
-	  	<a href="./search"><i class="fa fa-search"></i></a>  
-	  	<a href="./favorites"><i class="fa fa-heart"></i></a>
-	  	<a href="./profile"><i class="fa fa-user"></i></a>
-	</div> 
+
+	{{#if logged}}
+
+		<div class="icon-bar">
+	  		<a href="./home"><i class="fa fa-home"></i></a> 
+			<a href="./search"><i class="fa fa-search"></i></a>  
+			<a href="./favorites"><i class="fa fa-heart"></i></a>
+			<a href="./profile"><i class="fa fa-user"></i></a> 
+		</div>
+	{{else}}
+		<div class="icon-bar">
+		  <a href="./"><i class="fa fa-home"></i></a> 
+		  <a href="./searchNL"><i class="fa fa-search"></i></a>  
+		  <a href="./login"><i class="fa fa-heart"></i></a>
+		  <a href="./login"><i class="fa fa-user"></i></a> 
+		</div>
+	{{/if}}
 
 
 

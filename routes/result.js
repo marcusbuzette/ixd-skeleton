@@ -77,7 +77,6 @@ exports.search = function(req, res){
 
 	for (var i = data.places.length - 1; i >= 0; i--) {
 		if(data.places[i].name.match(req.query.name) ){
-			console.log("MAAAATCH")
 			resultList.push(data.places[i]) ;
 			resultList[resultList.length-1].listIndex = resultList.length-1;
 
@@ -86,7 +85,6 @@ exports.search = function(req, res){
 		
 	}
 	resultList["logged"] = true;
-	console.log(resultList);
 	res.render('searchList', {output: resultList})
 
 	
@@ -94,11 +92,13 @@ exports.search = function(req, res){
 
 exports.searchNL = function(req, res){
 	var resultList = new Array();
-
+	var search = req.query.name.toLowerCase();
+	console.log(search);
 
 	for (var i = data.places.length - 1; i >= 0; i--) {
-		if(data.places[i].name.match(req.query.name) ){
-			console.log("MAAAATCH")
+		var place_name = data.places[i].name.toLowerCase();
+		console.log(place_name);
+		if(place_name.match(search) ){
 			resultList.push(data.places[i]) ;
 			resultList[resultList.length-1].listIndex = resultList.length-1;
 
@@ -107,7 +107,6 @@ exports.searchNL = function(req, res){
 		
 	}
 	resultList["logged"] = false;
-	console.log(resultList);
 	res.render('searchList', {output: resultList})
 
 	
