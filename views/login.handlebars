@@ -4,42 +4,49 @@
 	<title>Log In</title>
 	<meta charset="UFT-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="UFT-8">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/spot.css">
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="./css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/spot.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+	<body>
 
-	<div class="container">
-		<div>
-			<br>
-			<h2>Log In</h2>
-			<br><br><br><br>
-			<form action="./home">
-				Username: <input type="text" name="Userame" value="Mickey Mouse"><br>
-				Password: <input type="password" name="Password" value="123456"><br>
+		<div class="container">
+			<div>
 				<br>
-				<input type="submit"  value="Log In">
-				</form>
+				<h2>Log In</h2>
+				<br><br><br><br>
+				<form action="./home">
+					Username: <input type="text" name="Userame" value="Mickey Mouse"><br>
+					Password: <input type="password" name="Password" value="123456"><br>
+					<br>
+					<input type="submit"  value="Log In">
+					</form>
+			</div>
+		
+			<p class="facebookLogin">Or Login through Facebook <br>
+				<fb:login-button 
+			  	scope="public_profile,email"
+			  	onlogin="checkLoginState();" style="padding-top: 8px;">
+				</fb:login-button>
+			</p>
+			<br><br>
+			<input type="button" value="Back" onclick="history.back()">
+
 		</div>
-	
-<p class="facebookLogin">Or Login through Facebook <br>
-		<fb:login-button 
-  	scope="public_profile,email"
-  	onlogin="checkLoginState();" style="padding-top: 8px;">
-	</fb:login-button>
 
-	</p>
-	<br><br>
-	<input type="button" value="Back" onclick="history.back()">
+		<div class="icon-bar">
+			<a href="./"><i class="fa fa-home"></i></a> 
+			<a href="./searchNL"><i class="fa fa-search"></i></a>  
+			<a href="./login"><i class="fa fa-heart"></i></a>
+			<a href="./login"><i class="fa fa-user"></i></a> 
+		</div>
 
-</div>
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-{{> facebook}}
-<script src="/js/facebook.js"></script>
-	
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		{{> facebook}}
+		<script src="/js/facebook.js"></script>
+		
 
-</body>
+	</body>
 </html>
