@@ -4,9 +4,9 @@ var globalTask;
 var nodes = new vis.DataSet([
   {label: "Group Study",tag: "groupstudy"},
   {label: "Work on laptop",tag: "laptop"},
-  {label: "     Read ",tag: "read"},
-  {label: "     Chat  ", tag: "chat"},
-  {label: "    Relax ", tag: "relax"},
+  {label: "   Read   ",tag: "read"},
+  {label: "    Chat   ", tag: "chat"},
+  {label: "   Relax  ", tag: "relax"},
 
 ]);
 
@@ -21,6 +21,9 @@ var data = {
 };
 
 var options = {
+  autoResize: true,
+  height: '100%',
+  width: '100%',
   nodes: {borderWidth:0,shape:"circle",color:{background:'#b7b7b7', border:'#f4b342', highlight:{background:'#f4b342', border: '#707070'}},font:{color:'#fff'}},
   physics: {
     stabilization: false,
@@ -34,9 +37,15 @@ var options = {
 
 var network = new vis.Network(container, data, options);
 
+network.once('startStabilizing', function() {
+    var scaleOption = { scale : 0.9 };
+    network.moveTo(scaleOption);
+})
+
 
 // Events
 network.on("click", function(e) {
+  console.log(e);
   if (e.nodes.length) {
     var node = nodes.get(e.nodes[0]);
     console.log(node.tag);
@@ -82,6 +91,12 @@ var optionsm = {
 };
 
 var networkm = new vis.Network(containerm, datam, optionsm);
+
+networkm.once('startStabilizing', function() {
+    var scaleOption = { scale : 0.9 };
+    networkm.moveTo(scaleOption);
+})
+
 
 // Events
 networkm.on("click", function(e) {

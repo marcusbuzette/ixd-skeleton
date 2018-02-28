@@ -54,6 +54,21 @@ body {
   }
 }
 
+.moodSelection{
+  position: relative;
+  height: 160px;
+  max-width: 100%;
+
+}
+
+.taskSelection{
+  position: relative;
+  height: 25%;
+  max-width: 100%;
+
+}
+
+
 
 .title{
   padding-top: 1vh;
@@ -79,7 +94,7 @@ body {
 position: absolute;
     /* width: 40vw; */
     height: 18vh;
-    top: 170;
+    top: 18%;
     left: 40;
     max-width: 90%;
     /* margin: 0 100px 0 100px; */
@@ -87,19 +102,21 @@ position: absolute;
     display: inline-block;
     margin: auto;
     /* margin-top: 45%; margin-left: 0%; */
+    border: 1px solid #f4b342;
 }
 
 #bubbletask {
   position: absolute;
   /* width: 40vw; */
   height: 18vh;
-  top: 170;
+  top: 18%;
   left: 40;
   max-width: 90%;
   margin: 0 auto;
   box-sizing: border-box; 
   display: inline-block;
   margin: auto;
+  border: 1px solid #f4b342;
 }
 .info{
 	padding-top: 5%;
@@ -210,6 +227,7 @@ html { margin-bottom: 30px }
 .tip {
     position: relative;
     display: inline-block;
+    margin-top:-25%;
 }
 
 .tip .tiptext {
