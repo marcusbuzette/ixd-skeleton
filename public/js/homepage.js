@@ -14,7 +14,7 @@ var nodes = new vis.DataSet([
 
 var edges = new vis.DataSet();
 
-var container = document.getElementById('bubblemood');
+var container = document.getElementById('bubbletask');
 var data = {
   nodes: nodes,
   edges: edges
@@ -22,14 +22,25 @@ var data = {
 
 var options = {
   nodes: {borderWidth:0,shape:"circle",color:{background:'#b7b7b7', border:'#f4b342', highlight:{background:'#f4b342', border: '#707070'}},font:{color:'#fff'}},
+  
+  interaction: {
+     dragView: false,
+    zoomView: false,
+    clickToUse: false,
+  },
   physics: {
+
     stabilization: false,
     minVelocity:  0.01,
     solver: "repulsion",
     repulsion: {
       nodeDistance: 40
     }
+  
   }
+
+  
+  
 };
 
 var network = new vis.Network(container, data, options);
@@ -63,7 +74,7 @@ var moods = new vis.DataSet([
 
 var edgem = new vis.DataSet();
 
-var containerm = document.getElementById('bubbletask');
+var containerm = document.getElementById('bubblemood');
 var datam = {
   nodes: moods,
   edges: edgem
@@ -71,7 +82,14 @@ var datam = {
 
 var optionsm = {
   nodes: {borderWidth:0,shape:"circle",color:{background:'#b7b7b7', border:'#f4b342', highlight:{background:'#f4b342', border: '#707070'}},font:{color:'#fff'}},
+  
+   interaction: {
+     dragView: false,
+    zoomView: false,
+    clickToUse: false,
+  },
   physics: {
+  
     stabilization: false,
     minVelocity:  0.01,
     solver: "repulsion",
@@ -79,6 +97,7 @@ var optionsm = {
       nodeDistance: 40
     }
   }
+ 
 };
 
 var networkm = new vis.Network(containerm, datam, optionsm);
