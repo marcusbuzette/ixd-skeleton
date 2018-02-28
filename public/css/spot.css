@@ -93,8 +93,8 @@ body {
 #bubblemood {
 position: absolute;
     /* width: 40vw; */
-    height: 18vh;
-    top: 18%;
+    height: 25vh;
+    top: -8%;
     left: 40;
     max-width: 90%;
     /* margin: 0 100px 0 100px; */
@@ -108,8 +108,8 @@ position: absolute;
 #bubbletask {
   position: absolute;
   /* width: 40vw; */
-  height: 18vh;
-  top: 18%;
+  height: 25vh;
+  top: 0%;
   left: 40;
   max-width: 90%;
   margin: 0 auto;

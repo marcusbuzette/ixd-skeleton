@@ -20,6 +20,7 @@ var data = {
   edges: edges
 };
 
+
 var options = {
   autoResize: true,
   height: '100%',
@@ -27,9 +28,10 @@ var options = {
   nodes: {borderWidth:0,shape:"circle",color:{background:'#b7b7b7', border:'#f4b342', highlight:{background:'#f4b342', border: '#707070'}},font:{color:'#fff'}},
   
   interaction: {
+    hover:true,
      dragView: false,
     zoomView: false,
-    clickToUse: false,
+   
   },
   physics: {
 
@@ -95,7 +97,7 @@ var optionsm = {
    interaction: {
      dragView: false,
     zoomView: false,
-    clickToUse: false,
+ 
   },
   physics: {
   
