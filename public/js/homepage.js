@@ -62,7 +62,7 @@ network.on("click", function(e) {
     console.log(node.tag);
     globalTask = node.tag;
     console.log(globalTask);
-    $("#confirm").attr("href","https://a7-spot.herokuapp.com/result?mood="+globalMood+"&task="+globalTask);
+    $("#confirm").attr("href","/result?mood="+globalMood+"&task="+globalTask);
     nodes.update(node);
   }
 });
@@ -123,7 +123,7 @@ networkm.on("click", function(e) {
     var nodem = moods.get(e.nodes[0]);
     console.log(nodem.tag);
     globalMood = nodem.tag;
-    $("#confirm").attr("href","https://a7-spot.herokuapp.com/result?mood="+globalMood+"&task="+globalTask);
+    $("#confirm").attr("href","/result?mood="+globalMood+"&task="+globalTask);
     moods.update(nodem);
   }
 });
