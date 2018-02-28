@@ -50,7 +50,9 @@ if ('development' == app.get('env')) {
 
 app.get('/', index.view);
 app.get('/result', result.view);
+app.get('/resultAlt', result.viewAlt);
 app.get('/resultNL', result.viewNL);
+app.get('/resultAltNL', result.viewAltNL);
 app.get('/signup', signup.view);
 app.get('/login', login.view);
 app.get('/home', home.view);

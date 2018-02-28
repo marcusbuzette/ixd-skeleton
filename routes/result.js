@@ -19,6 +19,29 @@ exports.view = function(req, res){
 	globalList = resultList;
 	nextList = globalList;
 	nextList["logged"] = true;
+	nextList["Alt"] = false;
+	res.render('result', {output: nextList})
+
+	
+};
+
+exports.viewAlt = function(req, res){
+	var resultList = new Array();
+
+
+	for (var i = data.places.length - 1; i >= 0; i--) {
+		console.log(i);
+		if(compareMood(req.query.mood,data.places[i].mood) || compareTask(req.query.task,data.places[i].task) ){
+			resultList.push(data.places[i]) ;
+			resultList[resultList.length-1].listIndex = resultList.length-1;
+
+		}
+		
+	}
+	globalList = resultList;
+	nextList = globalList;
+	nextList["logged"] = true;
+	nextList["Alt"] = true;
 	res.render('result', {output: nextList})
 
 	
@@ -40,6 +63,29 @@ exports.viewNL = function(req, res){
 	globalList = resultList;
 	nextList = globalList;
 	nextList["notLogged"] = false;
+	nextList["Alt"] = false;
+	res.render('result', {output: nextList})
+
+	
+};
+
+exports.viewAltNL = function(req, res){
+	var resultList = new Array();
+
+
+	for (var i = data.places.length - 1; i >= 0; i--) {
+		console.log(i);
+		if(compareMood(req.query.mood,data.places[i].mood) || compareTask(req.query.task,data.places[i].task) ){
+			resultList.push(data.places[i]) ;
+			resultList[resultList.length-1].listIndex = resultList.length-1;
+
+		}
+		
+	}
+	globalList = resultList;
+	nextList = globalList;
+	nextList["notLogged"] = false;
+	nextList["Alt"] = true;
 	res.render('result', {output: nextList})
 
 	

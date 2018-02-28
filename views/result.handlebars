@@ -9,55 +9,129 @@
 	<link href="./css/bootstrap-theme.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="./css/spot.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114577710-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-114577710-2');
+	</script>
 	
 </head>
 <body>
 	<div class="container">
-		<h2>Results</h2>
+		<h2 >Results</h2>
 		<div class="tip"><i class="fa fa-question-circle"></i>
 	  		<span class="tiptext">Here are some recommendations for you! Select No to see another option, select Yes to open navigation or select View to see more details :)
 
 	  			You can tap/drag the bubbles to select the one correspond with your current state
-	  		</span></div>
-			
+	  		</span>
+	  	</div>
+		
+
+		{{#if output.Alt}}
+			{{#if output.logged}}
+				<a href="./place/{{output.[0].placeId}}"><div class="thumbnail">
+					<h4>{{output.[0].name}}</h4>
+					<img src="{{output.[0].imageURL}}" class="img-responsive">
+					<div class="info">
+						{{#each output.[0].info}}
+							<p id="placedescription">{{this}}</p>
+						{{/each}}
+					</div>
+				</div></a>
+			{{else}}
+				<a href="./placeNL/{{output.[0].placeId}}"><div class="thumbnail">
+					<h4>{{output.[0].name}}</h4>
+					<img src="{{output.[0].imageURL}}" class="img-responsive">
+					<div class="info">
+						{{#each output.[0].info}}
+							<p id="placedescription">{{this}}</p>
+						{{/each}}
+					</div>
+				</div></a>
+			{{/if}}
+				
+
+		{{else}}
 			<h4>{{output.[0].name}}</h4>
 			<img src="{{output.[0].imageURL}}" class="img-responsive">
 			<div class="info">
 				{{#each output.[0].info}}
 					<p id="placedescription">{{this}}</p>
 				{{/each}}
-		</div>
-		</div>
+			</div>
+		{{/if}}	
+		
+	</div>
 
 	
 		{{#if output.logged}}
-			<div class="search-options">
-				<a href="./result_next"><button type="button">No</button></a>
-				<a href="./place/{{output.[0].placeId}}"><button type="button">View</button></a>
-				<a href="./navigation"><button type="button">Go!</button></a>
-			</div>
-			<div class="icon-bar">
-				<a href="./home"><i class="fa fa-home"></i></a> 
-			  	<a href="./search"><i class="fa fa-search"></i></a>  
-				<a href="./favorites"><i class="fa fa-heart"></i></a>
-				<a href="./profile"><i class="fa fa-user"></i></a> 
-			</div>
+			{{#if output.Alt}}
+				<div class="search-options">
+					<a href="./result_next"><button type="button">X</button></a>
+					<button id= "unfa" type="button">S2</button>
+					<a href="./navigation"><button type="button">V</button></a>
+				</div>
+				
+				<div>
+					<input type="button" value="Back" onclick="history.back()">
+					<a href="./"><i class="fa fa-home"></i></a> 
+				</div>
+
+			{{else}}
+				<div class="search-options">
+					<a href="./result_next"><button type="button">No</button></a>
+					<a href="./place/{{output.[0].placeId}}"><button type="button">View</button></a>
+					<a href="./navigation"><button type="button">Go!</button></a>
+				</div>
+				<br>
+				<input type="button" value="Back" onclick="history.back()">
+				
+				<div class="icon-bar">
+					<a href="./"><i class="fa fa-home"></i></a> 
+					<a href="./search"><i class="fa fa-search"></i></a>  
+					<a href="./favorites"><i class="fa fa-heart"></i></a>
+					<a href="./profile"><i class="fa fa-user"></i></a> 
+				</div>
+
+			{{/if}}
 		{{else}}
-			<div class="search-options">
-				<a href="./resultNL_next"><button type="button">No</button></a>
-				<a href="./placeNL/{{output.[0].placeId}}"><button type="button">View</button></a>
-				<a href="./navigationNL"><button type="button">Go!</button></a>
-			</div>
-			
-			<div class="icon-bar">
-				<a href="./"><i class="fa fa-home"></i></a> 
-				<a href="./searchNL"><i class="fa fa-search"></i></a>  
-				<a href="./login"><i class="fa fa-heart"></i></a>
-				<a href="./login"><i class="fa fa-user"></i></a> 
-			</div>
+			{{#if output.Alt}}
+				<div class="search-options">
+					<a href="./resultNL_next"><button type="button">X</button></a>
+					<button id= "unfa" type="button">S2</button>
+					<a href="./navigationNL"><button type="button">V</button></a>
+				</div>
+				
+				<div>
+					<input type="button" value="Back" onclick="history.back()">
+					<a href="./"><i class="fa fa-home"></i></a> 
+				</div>
+
+			{{else}}
+				<div class="search-options">
+					<a href="./resultNL_next"><button type="button">No</button></a>
+					<a href="./placeNL/{{output.[0].placeId}}"><button type="button">View</button></a>
+					<a href="./navigationNL"><button type="button">Go!</button></a>
+				</div>
+				<br>
+				<input type="button" value="Back" onclick="history.back()">
+				
+				<div class="icon-bar">
+					<a href="./"><i class="fa fa-home"></i></a> 
+					<a href="./searchNL"><i class="fa fa-search"></i></a>  
+					<a href="./login"><i class="fa fa-heart"></i></a>
+					<a href="./login"><i class="fa fa-user"></i></a> 
+				</div>
+
+			{{/if}}
+				
 		{{/if}}
-		<br>
-		<input type="button" value="Back" onclick="history.back()">
+		
 	
 	<!-- <div class="icon-bar">
 		<a href="./home"><i class="fa fa-home"></i></a> 
