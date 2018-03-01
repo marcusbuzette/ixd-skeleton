@@ -94,7 +94,7 @@
 					  "Outdoor Setting: NO",
 					  "Printer: YES"],
 			"mood" : ["focus"],
-			"task" : ["groupstudy","laptop","read","sleep"],
+			"task" : ["groupstudy","laptop","read"],
 			"address": "",
 			"distance": "",
 			"price": "",

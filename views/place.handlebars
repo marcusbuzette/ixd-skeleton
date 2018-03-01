@@ -43,8 +43,9 @@
 
 		<div id="scroll"></div>
 		<div class="info">
-			<h4 class="placemood">{{placeToShow.mood}}</h4>
-			<h4 class="placetask">{{placeToShow.task}}</h4>
+			<p class="placemood">Suitable Mood: {{placeToShow.mood}}</p>
+			<p class="placetask">Suitable Task: {{placeToShow.task}}</p>
+			<br>
 			{{#each placeToShow.info}}
 				<h5>{{this}}</h5>
 			{{/each}}
