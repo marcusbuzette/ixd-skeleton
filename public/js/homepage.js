@@ -95,6 +95,7 @@ var optionsm = {
   nodes: {borderWidth:0,shape:"circle",color:{background:'#b7b7b7', border:'#f4b342', highlight:{background:'#f4b342', border: '#707070'}},font:{color:'#fff'}},
   
    interaction: {
+    hover:true,
      dragView: false,
     zoomView: false,
  
