@@ -94,7 +94,7 @@ body {
 position: absolute;
     /* width: 40vw; */
     height: 25vh;
-    top: -8%;
+    top: 5%;
     left: 40;
     max-width: 90%;
     /* margin: 0 100px 0 100px; */
@@ -109,7 +109,7 @@ position: absolute;
   position: absolute;
   /* width: 40vw; */
   height: 25vh;
-  top: 0%;
+  top: 15%;
   left: 40;
   max-width: 90%;
   margin: 0 auto;
@@ -162,17 +162,69 @@ input[type="submit"]{
   cursor: pointer;
 }
 
-#wifi{
+#buttoncon{
+  padding-top:10px;
+}
+
+#confirm{
+  top: 10px;
+}
+
+
+/*  Icon for infor
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#pet{
   position: absolute;
     /* width: 40vw; */
-    
-    top:470px;
-    left: 80;
-    max-width: 90%;
-    /* margin: 0 100px 0 100px; */
+   
+    top: 508px;
+    max-width: 20%;
+    left: 40px;
     box-sizing: border-box;
     display: inline-block;
     margin: auto;
+    
+
+}
+#wifi{
+  position: absolute;
+    /* width: 40vw; */
+   
+    top: 548px;
+    max-width: 20%;
+    left: 40px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: auto;
+    
+
+}
+
+#clock{
+  position: absolute;
+    /* width: 40vw; */
+   
+    top: 470px;
+    max-width: 20%;
+    left: 40px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: auto;
+    
+
+}
+#sun{
+  position: absolute;
+    /* width: 40vw; */
+   
+    top: 585px;
+    max-width: 20%;
+    left: 42px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: auto;
+}
+    
 
 }
 

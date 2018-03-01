@@ -22,6 +22,12 @@ var data = {
 
 var options = {
   nodes: {borderWidth:0,shape:"circle",color:{background:'#b7b7b7', border:'#f4b342', highlight:{background:'#f4b342', border: '#707070'}},font:{color:'#fff'}},
+  interaction: {
+    
+     dragView: false,
+    zoomView: false,
+   
+  },
   physics: {
     stabilization: false,
     minVelocity:  0.01,
@@ -76,6 +82,12 @@ var datam = {
 
 var optionsm = {
   nodes: {borderWidth:0,shape:"circle",color:{background:'#b7b7b7', border:'#f4b342', highlight:{background:'#f4b342', border: '#707070'}},font:{color:'#fff'}},
+  interaction: {
+  
+     dragView: false,
+    zoomView: false,
+   
+  },
   physics: {
     stabilization: false,
     minVelocity:  0.01,
