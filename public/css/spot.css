@@ -93,9 +93,9 @@ body {
 #bubblemood {
 position: absolute;
     /* width: 40vw; */
-    height: 25vh;
+    height: 33vh;
     top: 5%;
-    left: 40;
+    left: 40px;
     max-width: 90%;
     /* margin: 0 100px 0 100px; */
     box-sizing: border-box;
@@ -108,9 +108,9 @@ position: absolute;
 #bubbletask {
   position: absolute;
   /* width: 40vw; */
-  height: 25vh;
+  height: 35vh;
   top: 15%;
-  left: 40;
+  left: 40px;
   max-width: 90%;
   margin: 0 auto;
   box-sizing: border-box; 
