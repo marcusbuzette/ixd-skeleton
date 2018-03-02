@@ -462,9 +462,10 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
+  margin: 2px;
   display: inline-block;
   height: 38px;
-  padding: 0 25px;
+  padding: 0 20px;
   color: #555;
   text-align: center;
   font-size: 12px;
