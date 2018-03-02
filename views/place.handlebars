@@ -36,21 +36,17 @@
 		{{/if}}
 
 
-        <i id = wifi class="fa fa-wifi" style="font-size:21px"></i>
-        <i id = clock class="fa fa-clock-o" style="font-size:21px"></i>
-        <i id = pet class="fa fa-paw" style="font-size:21px"></i>	
-        <i id = sun class="fa fa-sun-o" style="font-size:21px"></i>
 
 		<div id="scroll"></div>
 		<div class="info">
-			<p class="placemood">Suitable Mood: {{placeToShow.mood}}</p>
-			<p class="placetask">Suitable Task: {{placeToShow.task}}</p>
+			<p style="text-align: center;" class="placemood">Suitable Mood: {{placeToShow.mood}}</p>
+			<p style="text-align: center;" class="placetask">Suitable Task: {{placeToShow.task}}</p>
 			<br>
 			{{#each placeToShow.info}}
 				<h5>{{this}}</h5>
 			{{/each}}
 			<br>
-			<h4>Reviews</h4>
+			<h4 style="text-align: center;">Reviews</h4>
 			<p>{{placeToShow.description}}</p>
 		</div>
 			

@@ -36,13 +36,11 @@
 			{{#if output.logged}}
 		  		{{#each output}}
 					<a href="./place/{{placeId}}">
-						<div class="thumbnail">
+						<div style="background: #f6f6f6; " class="thumbnail">
 							<h5>{{name}}</h5>
-							<img src="{{imageURL}}" class="img-responsive">
+							<img style="width: 90%;" src="{{imageURL}}" class="img-responsive">
 							<div class="info">
-								{{#each output.info}}
-									<p id="placedescription">{{this}}</p>
-								{{/each}}
+								<h5 style="text-align: center;">{{rate}}</h5>
 							</div>
 						</div>
 					</a>
@@ -54,9 +52,7 @@
 							<h5>{{name}}</h5>
 							<img src="{{imageURL}}" class="img-responsive">
 							<div class="info">
-								{{#each info}}
-									<p id="placedescription">{{this}}</p>
-								{{/each}}
+								<h4 style="text-align: center;">{{rate}}</4>
 							</div>
 						</div>
 					</a>
@@ -68,9 +64,7 @@
 			<h4>{{output.[0].name}}</h4>
 			<img src="{{output.[0].imageURL}}" class="img-responsive">
 			<div class="info">
-				{{#each output.[0].info}}
-					<p id="placedescription">{{this}}</p>
-				{{/each}}
+				<h4 style="text-align: center; ">{{output.[0].rate}}</h4>
 			</div>
 			{{#if output.logged}}
 				<div class="search-options">
