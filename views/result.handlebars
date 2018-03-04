@@ -10,15 +10,8 @@
 	<link rel="stylesheet" href="./css/spot.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114577710-2"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
 
-	  gtag('config', 'UA-114577710-2');
-	</script>
+
 	
 </head>
 <body>
@@ -37,7 +30,7 @@
 		{{#if output.Alt}}
 			{{#if output.logged}}
 		  		{{#each output}}
-					<a href="./place/{{placeId}}">
+					<a href="./place/{{placeId}}" onclick="ga('create', 'UA-114618844-1','auto');ga('send', 'event', 'PlaceAlt', 'click')">
 						<div style="background: #f6f6f6; " class="thumbnail">
 							<h5>{{name}}</h5>
 							<img style="width: 90%;" src="{{imageURL}}" class="img-responsive">
@@ -49,7 +42,7 @@
 				{{/each}}
 			{{else}}
 				{{#each output}}
-					<a href="./placeNL/{{placeId}}">
+					<a href="./placeNL/{{placeId}}" onclick="ga('create', 'UA-114618844-1','auto');ga('send', 'event', 'PlaceAlt', 'click')">
 						<div class="thumbnail">
 							<h5>{{name}}</h5>
 							<img src="{{imageURL}}" class="img-responsive">
@@ -70,18 +63,18 @@
 			</div>
 			{{#if output.logged}}
 				<div class="search-options">
-					<a href="./result_next"><button type="button">No</button></a>
-					<a href="./place/{{output.[0].placeId}}"><button type="button">View</button></a>
-					<a href="./navigation"><button type="button">Go!</button></a>
+					<a href="./result_next" onclick="ga('create', 'UA-114618844-1','auto');ga('send', 'event', 'No', 'click')"><button type="button">No</button></a>
+					<a href="./place/{{output.[0].placeId}}" onclick="ga('create', 'UA-114618844-1','auto');ga('send', 'event', 'View', 'click')"><button  type="button">View</button></a>
+					<a href="./navigation"><button id= "GoB" type="button" onclick="ga('create', 'UA-114618844-1','auto');ga('send', 'event', 'Go', 'click')">Go!</button></a>
 				</div>
 				<br>
 				<input type="button" value="Back" onclick="history.back()">
 
 			{{else}}
 				<div style="vertical-align: center;" class="search-options">
-					<a href="./resultNL_next"><button type="button">No</button></a>
-					<a href="./placeNL/{{output.[0].placeId}}"><button type="button">View</button></a>
-					<a href="./navigationNL"><button type="button">Go!</button></a>
+					<a href="./resultNL_next" onclick="ga('create', 'UA-114618844-1','auto');ga('send', 'event', 'No', 'click')"><button type="button">No</button></a>
+					<a href="./placeNL/{{output.[0].placeId}}" onclick="ga('create', 'UA-114618844-1','auto');ga('send', 'event', 'View', 'click')"><button type="button">View</button></a>
+					<a href="./navigationNL"><button type="button"  onclick="ga('create', 'UA-114618844-1','auto');ga('send', 'event', 'Go', 'click')">Go!</button></a>
 				</div>
 				<br>
 				<input type="button" value="Back" onclick="history.back()">
@@ -120,7 +113,15 @@
 	  	<a href="./profile"><i class="fa fa-user"></i></a>
 	</div>  -->
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115102424-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-115102424-1');
+</script>
 
 </body>
 </html>

@@ -13,7 +13,7 @@
 	<script src="/js/jquery-1.11.0.js"></script>
 	<script src="/js/bootstrap.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/favorite.js"></script>
+	
 	
 
 
@@ -57,7 +57,7 @@
 
 
 		<div>
-		   <input type="button" value="Back" onclick="history.back()">
+		   <input type="button" value="Back" onclick="history.back();ga('create', 'UA-114618844-1','auto');ga('send', 'event', 'Back', 'click')">
 		</div>
 
 	</div>
@@ -79,6 +79,16 @@
 	{{/if}}
 	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115102424-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115102424-1');
+</script>
 
 </body>
 </html>
