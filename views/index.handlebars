@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<title>Test Page</title>
+	<title>Index Page</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -9,13 +9,10 @@
 	<link rel="stylesheet" href="css/vis.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  
-
 </head>
 <body>
 <div class="container">
 	<img id="logo" src="../images/SPOT.jpg">
-	
-
 	<div class="tip"><i class="fa fa-question-circle"></i>
   		<span class="tiptext">SPOT is a smart city-exploring recommendation system that give user suggestions based on your current mood and task in mind :) 
 
@@ -36,18 +33,18 @@
   	</div>
   	<br><br>
   	<a  id="confirm" href="./resultNL"><button type="button">Confirm</button></a>
-	<br>
+	<p style="text-align: center;"> &darr; Log in to access full functionality of SPOT &darr;</p>
   		
   		
-
-		<a href="login"><button class="highlight-button" type="button">  Log in  </button></a>
+<div id="logins">
 		<a href="signup"><button type="button">Sign up</button></a>
+		<a href="login"><button class="highlight-button" type="button">  Log in  </button></a>
 		<br>
 		<fb:login-button 
 	  	scope="public_profile,email"
 	  	onlogin="checkLoginState();">
 		</fb:login-button>
-
+</div>
 	
 
 </div>
