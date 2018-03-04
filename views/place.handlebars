@@ -26,13 +26,17 @@
 		</div>
 
 		{{#if placeToShow.logged}}
+			<div class="placeoptions">
 			<a href="../share"><button type="button">Share</button></a>
 			<button id= "unfa" type="button">Favorite</button>
 			<a href="../navigation"><button type="button">Go</button></a>
+			</div>
 		{{else}}
+		<div class="placeoptions">	
 			<a href="../login"><button type="button">Share</button></a>
 			<button id= "unfa" type="button">Favorite</button>
 			<a href="../navigationNL"><button type="button">Go</button></a>
+		</div>
 		{{/if}}
 
 
