@@ -28,6 +28,7 @@ body {
 .pagetitle{
   background-color: #f4b342;
   padding: 15px;
+  height:65px;
 }
 
 .pagetitle h2{
