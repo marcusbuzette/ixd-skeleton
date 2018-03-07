@@ -6,6 +6,7 @@ p{
 
 body {
      padding-bottom: 50px;
+     cursor:pointer;
 }
 
 #logo{
@@ -321,6 +322,7 @@ html { margin-bottom: 30px }
     position: relative;
     display: inline-block;
     margin-top:-25%;
+    cursor: pointer;
 }
 
 .tip .tiptext {
