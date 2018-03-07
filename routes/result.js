@@ -62,7 +62,7 @@ exports.viewNL = function(req, res){
 	}
 	globalList = resultList;
 	nextList = globalList;
-	nextList["notLogged"] = false;
+	nextList["logged"] = false;
 	nextList["Alt"] = false;
 	res.render('result', {output: nextList})
 
@@ -84,7 +84,7 @@ exports.viewAltNL = function(req, res){
 	}
 	globalList = resultList;
 	nextList = globalList;
-	nextList["notLogged"] = false;
+	nextList["logged"] = false;
 	nextList["Alt"] = true;
 	res.render('result', {output: nextList})
 
@@ -109,7 +109,7 @@ exports.nextNL = function(req,res){
 		nextList.push(aux);
 	}else{
 	}
-	nextList["notLogged"] = false;
+	nextList["logged"] = false;
 	res.render('result', {output: nextList})
 }
 
