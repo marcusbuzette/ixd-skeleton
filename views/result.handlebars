@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+	
 	<!-- Google Analytics Content Experiment code -->
 <script>function utmx_section(){}function utmx(){}(function(){var
 k='170832426-0',d=document,l=d.location,c=d.cookie;
@@ -59,10 +61,10 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 					<a href="./place/{{placeId}}" onclick="ga('create', 'UA-114618844-1','auto');ga('send', 'event', 'PlaceAlt', 'click')">
 						<div style="background: #f6f6f6; " class="thumbnail">
 							<h5>{{name}}</h5>
-							<img style="width: 90%;" src="{{imageURL}}" class="img-responsive">
-							<div class="info">
-								<h5 style="text-align: center;">{{rate}}</h5>
-							</div>
+							<img style="width: 50%;display: inline-block;"" src="{{imageURL}}" class="img-responsive">
+							
+								<p style="display: inline-block; margin:0 auto">{{rate}}</p>
+							
 						</div>
 					</a>
 				{{/each}}
@@ -72,9 +74,9 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 						<div class="thumbnail">
 							<h5>{{name}}</h5>
 							<img src="{{imageURL}}" class="img-responsive">
-							<div class="info">
-								<h4 style="text-align: center;">{{rate}}</4>
-							</div>
+							
+								<h4 style="text-align: center;">{{rate}}</h4>
+							
 						</div>
 					</a>
 				{{/each}}
@@ -90,7 +92,13 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 			{{#if output.logged}}
 				<div class="search-options">
 					<a href="./result_next" onclick="ga('create', 'UA-114618844-1','auto');ga('send', 'event', 'No', 'click')"><button type="button">No</button></a>
-					<a href="./place/{{output.[0].placeId}}" onclick="ga('create', 'UA-114618844-1','auto');ga('send', 'event', 'View', 'click')"><button  type="button">View</button></a>
+					<a href="./placeNL/{{output.[0].placeId}}" onclick="ga('create', 'UA-114618844-1','auto');if (window.performance) {
+  																// Gets the number of milliseconds since page load
+  																// (and rounds the result since the value must be an integer).
+  																var timeSincePageLoad = Math.round(performance.now());
+
+  																// Sends the timing hit to Google Analytics.
+  									ga('send', 'timing', 'timeDiff', 'resultPage', timeSincePageLoad);}"><button type="button">View</button></a>
 					<a href="./navigation"><button id= "GoB" type="button" onclick="ga('create', 'UA-114618844-1','auto');ga('send', 'event', 'Go', 'click')">Go!</button></a>
 				</div>
 				<br>
@@ -99,7 +107,13 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 			{{else}}
 				<div style="vertical-align: center;" class="search-options">
 					<a href="./resultNL_next" onclick="ga('create', 'UA-114618844-1','auto');ga('send', 'event', 'No', 'click')"><button type="button">No</button></a>
-					<a href="./placeNL/{{output.[0].placeId}}" onclick="ga('create', 'UA-114618844-1','auto');ga('send', 'event', 'View', 'click')"><button type="button">View</button></a>
+					<a href="./placeNL/{{output.[0].placeId}}" onclick="ga('create', 'UA-114618844-1','auto');if (window.performance) {
+  																// Gets the number of milliseconds since page load
+  																// (and rounds the result since the value must be an integer).
+  																var timeSincePageLoad = Math.round(performance.now());
+
+  																// Sends the timing hit to Google Analytics.
+  									ga('send', 'timing', 'timeDiff', 'resultPage', timeSincePageLoad);}"><button type="button">View</button></a>
 					<a href="./navigationNL"><button type="button"  onclick="ga('create', 'UA-114618844-1','auto');ga('send', 'event', 'Go', 'click')">Go!</button></a>
 				</div>
 				<br>
