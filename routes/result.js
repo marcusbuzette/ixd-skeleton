@@ -98,8 +98,8 @@ exports.next = function(req,res){
 		nextList.push(aux);
 	}else{
 	}
-	globalList["logged"] = true;
-	res.render('result', {output: globalList})
+	nextList["logged"] = true;
+	res.render('result', {output: nextList})
 }
 
 exports.nextNL = function(req,res){
