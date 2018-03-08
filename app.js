@@ -64,7 +64,7 @@ app.get('/place/:placeId', place.view);
 app.get('/placeNL/:placeId', place.viewNL);
 app.get ('/map',map.view);
 app.get('/result_next',result.next);
-app.get('/resultNL_next',result.nextNL);
+app.get('/result_next_not_logged_in',result.nextNL);
 app.get('/result_search',result.search);
 app.get('/result_searchNL',result.searchNL);
 app.get('/navigation',navigation.view);
