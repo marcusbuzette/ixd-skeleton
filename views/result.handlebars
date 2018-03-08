@@ -64,7 +64,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 			</div>
 			{{#if output.logged}}
 		  		<div class="search-options">
-					<a href="./result_next" onclick="ga('create', 'UA-114618844-1','auto');ga('send', 'event', 'NoB', 'click')"><button type="button">More</button></a>
+					<a href="./resultAlt_next" onclick="ga('create', 'UA-114618844-1','auto');ga('send', 'event', 'NoB', 'click')"><button type="button">More</button></a>
 					<a href="./placeNL/{{output.[0].placeId}}" ><button type="button">View</button></a>
 					<a href="./navigation"><button id= "GoB" type="button" >Go!</button></a>
 				</div>
@@ -72,9 +72,9 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 				<input type="button" value="Back" onclick="history.back()">
 			{{else}}
 				<div class="search-options">
-					<a href="./resultNL_next" onclick="ga('create', 'UA-114618844-1','auto');ga('send', 'event', 'NoB', 'click')"><button type="button">More</button></a>
+					<a href="./resultAltNL_next" onclick="ga('create', 'UA-114618844-1','auto');ga('send', 'event', 'NoB', 'click')"><button type="button">More</button></a>
 					<a href="./placeNL/{{output.[0].placeId}}" ><button type="button">View</button></a>
-					<a href="./navigation"><button id= "GoB" type="button" >Go!</button></a>
+					<a href="./navigationNL"><button id= "GoB" type="button" >Go!</button></a>
 				</div>
 				<br>
 				<input type="button" value="Back" onclick="history.back()">
