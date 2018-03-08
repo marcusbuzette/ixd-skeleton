@@ -66,6 +66,7 @@ app.get ('/map',map.view);
 app.get('/result_next',result.next);
 
 app.get('/result_next_not_logged_in',result.nextNL);
+app.get('/resultAlt_next_not_logged_in',result.nextNL);
 
 app.get('/resultAlt_next', result.next);
 app.get('/resultAltNL_next',result.nextNL);
