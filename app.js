@@ -64,13 +64,12 @@ app.get('/place/:placeId', place.view);
 app.get('/placeNL/:placeId', place.viewNL);
 app.get ('/map',map.view);
 app.get('/result_next',result.next);
-<<<<<<< HEAD
+
 app.get('/result_next_not_logged_in',result.nextNL);
-=======
-app.get('/resultNL_next',result.nextNL);
+
 app.get('/resultAlt_next', result.next);
 app.get('/resultAltNL_next',result.nextNL);
->>>>>>> ce7d646e34db569c124b833f51ea9f3983a4b14b
+
 app.get('/result_search',result.search);
 app.get('/result_searchNL',result.searchNL);
 app.get('/navigation',navigation.view);
