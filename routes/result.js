@@ -119,10 +119,13 @@ exports.back = function(req,res){
 
 exports.search = function(req, res){
 	var resultList = new Array();
-
+	var search = req.query.name.toLowerCase();
+	console.log(search);
 
 	for (var i = data.places.length - 1; i >= 0; i--) {
-		if(data.places[i].name.match(req.query.name) ){
+		var place_name = data.places[i].name.toLowerCase();
+		console.log(place_name);
+		if(place_name.match(search) ){
 			resultList.push(data.places[i]) ;
 			resultList[resultList.length-1].listIndex = resultList.length-1;
 

@@ -21,31 +21,31 @@
 		<br>
 		<br>
 		<div class="search-container">
-			{{#if data.logged}}
+			{{#if logged}}
 			
-		    <form action="./result_search">
-		      	<input type="text" placeholder="Search.." name="name">
-		      	<button type="submit" value="Search"><i class="fa fa-search"></i></button>
-		    </form>
+			    <form action="./result_search">
+			      	<input type="text" placeholder="Search.." name="name">
+			      	<button type="submit" value="Search"><i class="fa fa-search"></i></button>
+			    </form>
 
-		    <br><br>
-			<h4>Trending</h4>
-			<ul>
-				<li><a href="./place/1">Jazz Cafe</a></li>
-				<li><a href="./place/2">Sungod Lounge</a></li>
-			</ul>
+			    <br><br>
+				<h4>Trending</h4>
+				<ul>
+					<li><a href="./place/1">Jazz Cafe</a></li>
+					<li><a href="./place/2">Sungod Lounge</a></li>
+				</ul>
 		    {{else}}
-		    <form action="./result_searchNL">
-		      	<input type="text" placeholder="Search.." name="name">
-		      	<button type="submit" value="Search"><i class="fa fa-search"></i></button>
-		    </form>
+			    <form action="./result_searchNL">
+			      	<input type="text" placeholder="Search.." name="name">
+			      	<button type="submit" value="Search"><i class="fa fa-search"></i></button>
+			    </form>
 
-		    <br><br>
-			<h4>Trending</h4>
-			<ul>
-				<li><a href="./placeNL/1">Jazz Cafe</a></li>
-				<li><a href="./placeNL/2">Sungod Lounge</a></li>
-			</ul>
+			    <br><br>
+				<h4>Trending</h4>
+				<ul>
+					<li><a href="./placeNL/1">Jazz Cafe</a></li>
+					<li><a href="./placeNL/2">Sungod Lounge</a></li>
+				</ul>
 		    {{/if}}
   		</div>
 

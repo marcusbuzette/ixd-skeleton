@@ -138,6 +138,21 @@
 			"bio": "asd"
 		}
 	]
+	, "favorites" : [
+		{
+			"placeId": "1",
+			"name": "Jazz Cafe",
+			"description": ["Nice jazz music and nice ice coffee"] ,
+			"imageURL": "../images/1.png"
+		},
+		{
+			"placeId" : "2",
+			"name": "Sungod Lounge",
+			"description": ["Nice spot for group study "],
+			"imageURL": "../images/7.jpeg"
+		}
+
+	]
 	
 
 }

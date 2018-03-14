@@ -22,10 +22,16 @@
   		</span>
   		</div>
 		<br><br>
-		<ul>
-			<li><a href="./place/1">Jazz Cafe</a></li>
-			<li><a href="./place/2">Sungod Lounge</a></li>
-		</ul>	
+
+		{{#each output}}
+			<a href="./place/{{placeId}}">
+				<div class="thumbnail">
+					<h5>{{name}}</h5>
+					<img src="{{imageURL}}" class="img-responsive">
+					<p>{{description}}</p>
+				</div>
+			</a>
+		{{/each}}	
 	</div>
 </div>
 	<div class="icon-bar">

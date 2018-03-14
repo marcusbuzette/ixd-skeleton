@@ -1,6 +1,8 @@
 var data = require('../data.json');
+var favorites = new Array();
 
 exports.view = function(req, res){
-	console.log(data);
-	res.render('favorites' , data);
+	favorites = data.favorites;
+	res.render('favorites' , {output: favorites});
 };
+
